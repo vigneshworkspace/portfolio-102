@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 
 export default function ContactSection() {
-    const email = "vigneshwaran.dev@example.com";
+    const email = "vignesh.aidev@gmail.com";
     return (
         <section id="contact" className="py-24 md:py-40 text-center">
             <p className="section-title mb-4">07 // Get In Touch</p>

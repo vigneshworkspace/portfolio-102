@@ -36,7 +36,7 @@ ${PROJECTS.map(p => `- **${p.title} (${p.category})**: ${p.description} (Tech: $
 ${CERTIFICATIONS.map(c => `- **${c.title}** from ${c.issuer} (${c.date})`).join('\n')}
 
 ## CONTACT & LINKS
-- **Email**: vigneshwaran.dev@example.com
+- **Email**: vignesh.aidev@gmail.com
 - **GitHub**: ${GITHUB_URL}
 - **LinkedIn**: ${LINKEDIN_URL}
 - **Resume**: ${RESUME_URL}
