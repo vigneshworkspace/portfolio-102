@@ -34,7 +34,7 @@ export const EXPERIENCE = [
         description: "Developed and implemented AI models, focusing on practical applications and contributing to AI-driven projects in a remote environment."
     },
     {
-        company: "Virtual Internship",
+        company: "Novitech R&D pvt ltd",
         title: "Machine Learning Intern",
         date: "March 2024 - April 2024",
         description: "Gained hands-on experience in machine learning, including data preprocessing, model training, and evaluation on real-world datasets."
