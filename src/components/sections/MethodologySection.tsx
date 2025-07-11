@@ -25,7 +25,7 @@ export default function MethodologySection() {
                     {steps.map((item) => (
                         <div key={item.step} className="border border-dashed border-border/50 p-8 rounded-lg">
                            <div className="mb-6">
-                               <span className="font-headline font-bold text-4xl text-primary">{item.step}</span>
+                               <span className="font-headline font-bold text-4xl text-accent">{item.step}</span>
                            </div>
                             <h4 className="font-bold font-headline text-2xl uppercase tracking-wider mt-6 mb-3">{item.title}</h4>
                             <p className="text-sm text-muted-foreground max-w-xs mx-auto font-mono">{item.description}</p>

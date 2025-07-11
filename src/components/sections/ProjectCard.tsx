@@ -54,7 +54,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
     return (
         <div className="project-card-container group">
-            <div className="grid md:grid-cols-2 items-center bg-card/50 backdrop-blur-sm border border-dashed border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:border-foreground">
+            <div className="grid md:grid-cols-2 items-center bg-card/50 backdrop-blur-sm border border-dashed border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:border-accent">
                 <div className={cn("p-8 md:p-12 order-2", isOdd && "md:order-1")}>
                     <p className="font-headline text-lg text-primary mb-2">{project.category}</p>
                     <h3 className="text-4xl font-bold font-headline mb-4 uppercase tracking-wider">{project.title}</h3>
@@ -68,8 +68,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                         <Button variant="secondary" asChild className="font-headline uppercase text-xs tracking-widest px-8 py-6 hover:bg-primary hover:text-primary-foreground">
                             <a href={project.link} target="_blank" rel="noopener noreferrer">View on GitHub</a>
                         </Button>
-                         <Button onClick={onSuggestTags} variant="outline" className="font-headline uppercase text-xs tracking-widest px-8 py-6 group/btn">
-                            <Bot className="mr-2 h-4 w-4 transition-all group-hover/btn:text-primary group-hover/btn:animate-pulse"/>
+                         <Button onClick={onSuggestTags} variant="outline" className="font-headline uppercase text-xs tracking-widest px-8 py-6 group/btn hover:bg-accent hover:text-accent-foreground">
+                            <Bot className="mr-2 h-4 w-4 transition-all group-hover/btn:text-accent-foreground group-hover/btn:animate-pulse"/>
                             Suggest Tags
                         </Button>
                     </div>

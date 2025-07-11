@@ -74,11 +74,11 @@ export default function Header() {
     return (
         <header className={cn(
             "fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-sm z-50 transition-all duration-300",
-            isScrolled ? "border-b border-border/10 shadow-sm" : "border-b border-transparent"
+            isScrolled ? "border-b border-border shadow-sm" : "border-b border-transparent"
         )}>
             <div className="container mx-auto px-6">
                 <nav className="flex justify-between items-center h-20">
-                    <Link href="#home" className="font-display text-2xl font-bold tracking-tight group">
+                    <Link href="#home" className="font-headline text-2xl font-bold tracking-tight group">
                         V<span className="text-primary group-hover:animate-pulse">AI</span>D
                     </Link>
                     <div className="hidden md:flex items-center space-x-8">

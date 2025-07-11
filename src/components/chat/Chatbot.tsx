@@ -106,7 +106,7 @@ export default function Chatbot() {
                   )}
                 >
                     {message.role === 'model' && (
-                        <div className="p-2 bg-primary text-primary-foreground rounded-full">
+                        <div className="p-2 bg-accent text-accent-foreground rounded-full">
                             <Bot className="h-5 w-5"/>
                         </div>
                     )}
