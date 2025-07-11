@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { RESUME_URL } from '@/lib/data';
 import { Button } from '../ui/button';
+import { ThemeToggleButton } from '../ThemeToggleButton';
 
 const NavLink = ({ 
     href, 
@@ -88,7 +89,8 @@ export default function Header() {
                             </NavLink>
                         ))}
                     </div>
-                     <div className="hidden md:flex items-center">
+                     <div className="hidden md:flex items-center gap-4">
+                        <ThemeToggleButton />
                         <Button asChild variant="outline" size="sm" className="font-body tracking-wide px-6 py-4 rounded-full">
                             <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">Resume</a>
                         </Button>
