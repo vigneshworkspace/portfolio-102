@@ -79,7 +79,7 @@ export default function Header() {
         )}>
             <div className="container mx-auto px-6">
                 <nav className="flex justify-between items-center h-20">
-                    <Link href="#home" className="font-headline text-2xl font-bold tracking-tight group">
+                    <Link href="#home" className="font-body text-2xl font-bold tracking-tight group">
                         V<span className="text-primary group-hover:animate-pulse">AI</span>D
                     </Link>
                     <div className="hidden md:flex items-center space-x-8">
