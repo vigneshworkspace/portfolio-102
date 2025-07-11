@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
-import { GITHUB_URL, LINKEDIN_URL, RESUME_URL } from '@/lib/data';
+import { RESUME_URL } from '@/lib/data';
 import { Button } from '../ui/button';
 
 const NavLink = ({ 
@@ -19,15 +19,14 @@ const NavLink = ({
         <a 
             href={href} 
             className={cn(
-                "font-headline uppercase text-lg tracking-widest relative transition-colors duration-300",
-                isActive ? "text-primary" : "hover:text-primary",
+                "font-medium text-sm tracking-wide relative transition-colors duration-300",
+                isActive ? "text-primary" : "text-foreground/70 hover:text-primary",
             )}
         >
             {children}
             <span className={cn(
                 "absolute -bottom-1 left-0 w-full h-0.5 bg-primary transform transition-transform duration-300",
-                isActive ? "scale-x-100" : "scale-x-0",
-                "group-hover:scale-x-100" // This won't work as there's no group, but the hover on the parent works
+                isActive ? "scale-x-100" : "scale-x-0"
             )} />
         </a>
     )
@@ -51,7 +50,7 @@ export default function Header() {
                     }
                 });
             },
-            { rootMargin: '-30% 0px -70% 0px' } // Adjust threshold for better accuracy
+            { rootMargin: '-30% 0px -70% 0px' } 
         );
 
         const sections = document.querySelectorAll('section');
@@ -75,12 +74,12 @@ export default function Header() {
     return (
         <header className={cn(
             "fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-sm z-50 transition-all duration-300",
-            isScrolled ? "border-b border-border shadow-lg" : "border-b border-transparent"
+            isScrolled ? "border-b border-border/10 shadow-sm" : "border-b border-transparent"
         )}>
             <div className="container mx-auto px-6">
                 <nav className="flex justify-between items-center h-20">
-                    <Link href="#home" className="font-headline text-2xl font-bold tracking-tighter group">
-                        V<span className="text-primary-foreground bg-primary rounded-sm p-1 group-hover:animate-pulse">AI</span>D
+                    <Link href="#home" className="font-display text-2xl font-bold tracking-tight group">
+                        V<span className="text-primary group-hover:animate-pulse">AI</span>D
                     </Link>
                     <div className="hidden md:flex items-center space-x-8">
                         {navItems.map(item => (
@@ -90,7 +89,7 @@ export default function Header() {
                         ))}
                     </div>
                      <div className="hidden md:flex items-center">
-                        <Button asChild variant="outline" size="sm" className="font-headline uppercase text-xs tracking-widest px-6 py-4">
+                        <Button asChild variant="outline" size="sm" className="font-body tracking-wide px-6 py-4 rounded-full">
                             <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">Resume</a>
                         </Button>
                     </div>
