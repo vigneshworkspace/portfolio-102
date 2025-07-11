@@ -94,6 +94,12 @@ export const CERTIFICATIONS = [
         link: "#"
     },
     {
+        title: "TensorFlow",
+        issuer: "Geeks for Geeks",
+        date: "2024",
+        link: "#"
+    },
+    {
         title: "Quantum Computing with AI",
         issuer: "Udemy",
         date: "2024",
