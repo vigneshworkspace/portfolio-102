@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { GITHUB_URL, LINKEDIN_URL, RESUME_URL } from '@/lib/data';
 
 const FooterLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
