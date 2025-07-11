@@ -31,6 +31,7 @@ const FadeInSection = ({ children, className }: FadeInSectionProps) => {
 
     return () => {
       if (sectionRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(sectionRef.current);
       }
     };
@@ -40,8 +41,8 @@ const FadeInSection = ({ children, className }: FadeInSectionProps) => {
     <div
       ref={sectionRef}
       className={cn(
-        "transition-opacity duration-1000 ease-out",
-        isVisible ? "opacity-100" : "opacity-0 translate-y-5",
+        "transition-all duration-1000 ease-out",
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",
         className
       )}
     >
