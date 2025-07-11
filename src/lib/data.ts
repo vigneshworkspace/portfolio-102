@@ -16,6 +16,12 @@ export const SKILLS = [
 
 export const EXPERIENCE = [
     {
+        company: "Sathyabama Institute of Science and Technology",
+        title: "B.E. Computer Science & Engineering",
+        date: "2022 - Present",
+        description: "Pursuing a comprehensive degree in computer science, focusing on software development, algorithms, and artificial intelligence principles."
+    },
+    {
         company: "EK Technologies",
         title: "Full Stack Intern",
         date: "May 2024 - June 2024",
@@ -34,17 +40,11 @@ export const EXPERIENCE = [
         description: "Gained hands-on experience in machine learning, including data preprocessing, model training, and evaluation on real-world datasets."
     },
     {
-        company: "University Projects",
-        title: "Student Developer",
-        date: "2022 - Present",
-        description: "As a computer science student, I have built several full-stack and AI-powered applications. These projects involved creating RESTful APIs, developing responsive front-ends with React, and implementing machine learning models for tasks like classification and recommendation."
+        company: "Vellamal International School",
+        title: "High School Education",
+        date: "Finished August 2022",
+        description: "Completed my 12th-grade education, which laid the foundational knowledge for pursuing a career in technology and computer science."
     },
-    {
-        company: "AI Learning & Exploration",
-        title: "Self-Starter",
-        date: "2023 - Present",
-        description: "Contributed to open-source projects and developed personal applications to deepen my understanding of AI. This includes fine-tuning language models, building RAG pipelines with LangChain, and deploying models as microservices."
-    }
 ];
 
 export const PROJECTS = [
