@@ -54,14 +54,14 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
     return (
         <div className="project-card-container group">
-            <div className="grid md:grid-cols-2 items-center bg-card border border-border rounded-lg overflow-hidden transition-all duration-300 hover:border-foreground hover:shadow-xl">
+            <div className="grid md:grid-cols-2 items-center bg-card border border-border rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-accent">
                 <div className={cn("p-8 md:p-12 order-2", isOdd && "md:order-1")}>
                     <p className="font-headline text-xs text-primary mb-2">{project.category}</p>
                     <h3 className="text-2xl font-bold font-headline mb-3">{project.title}</h3>
                     <p className="text-muted-foreground mb-6 text-sm leading-relaxed">{project.description}</p>
                     <div className="flex flex-wrap gap-2 mb-6">
                         {project.tags.map((tag) => (
-                            <Badge key={tag} variant="outline" className="font-headline uppercase tracking-wider transition-colors duration-300 group-hover:border-muted-foreground">{tag}</Badge>
+                            <Badge key={tag} variant="outline" className="font-headline uppercase tracking-wider transition-colors duration-300 group-hover:border-primary/50">{tag}</Badge>
                         ))}
                     </div>
                     <div className="flex flex-wrap gap-4">

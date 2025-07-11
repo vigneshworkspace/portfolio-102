@@ -19,11 +19,11 @@ export default function CertificationsSection() {
                             rel="noopener noreferrer" 
                             className="group block"
                         >
-                            <Card className="h-full transition-all duration-300 hover:border-foreground hover:shadow-xl hover:-translate-y-1 bg-card/80 backdrop-blur-sm">
+                            <Card className="h-full transition-all duration-300 hover:border-accent hover:shadow-xl hover:-translate-y-2 bg-card/80 backdrop-blur-sm">
                                 <CardHeader>
                                     <div className="flex justify-between items-start">
                                         <CardTitle className="font-headline text-lg mb-2">{cert.title}</CardTitle>
-                                        <ArrowUpRight className="h-5 w-5 text-muted-foreground transition-transform duration-300 group-hover:text-foreground group-hover:rotate-45" />
+                                        <ArrowUpRight className="h-5 w-5 text-muted-foreground transition-transform duration-300 group-hover:text-primary group-hover:rotate-45" />
                                     </div>
                                     <CardDescription className="font-headline text-sm text-muted-foreground">{cert.issuer}</CardDescription>
                                     <div className="pt-4">

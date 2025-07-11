@@ -15,7 +15,7 @@ export default function BadgesSection() {
                                 <Badge 
                                     key={index}
                                     variant="secondary"
-                                    className="text-base md:text-lg font-headline px-4 py-2 border-2 border-transparent transition-all duration-300 hover:border-primary hover:shadow-lg hover:-translate-y-1"
+                                    className="text-base md:text-lg font-headline px-4 py-2 border-2 border-transparent transition-all duration-300 hover:border-primary hover:bg-primary/10 hover:shadow-lg hover:-translate-y-1"
                                 >
                                     {badgeText}
                                 </Badge>
