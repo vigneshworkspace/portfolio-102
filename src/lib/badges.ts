@@ -1,0 +1,20 @@
+export const BADGES = [
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Python",
+    "PyTorch",
+    "Genkit",
+    "LLMs",
+    "RAG",
+    "Full-Stack",
+    "AI Engineer",
+    "Cloud-Native",
+    "DevOps",
+    "SQL",
+    "NoSQL",
+    "Docker",
+    "Agile",
+    "Problem Solver"
+];
