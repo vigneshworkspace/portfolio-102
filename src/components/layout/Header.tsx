@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { GITHUB_URL, LINKEDIN_URL, RESUME_URL } from '@/lib/data';
+import { Button } from '../ui/button';
 
 const NavLink = ({ href, children, isExternal = false }: { href: string; children: React.ReactNode, isExternal?: boolean }) => {
     const linkProps = isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {};
@@ -42,10 +43,9 @@ export default function Header() {
                         <NavLink href="#experience">Experience</NavLink>
                         <NavLink href="#projects">Projects</NavLink>
                         <NavLink href="#contact">Contact</NavLink>
-                        <div className="w-[2px] h-6 bg-border/50"></div>
-                        <NavLink href={GITHUB_URL} isExternal={true}>GitHub</NavLink>
-                        <NavLink href={LINKEDIN_URL} isExternal={true}>LinkedIn</NavLink>
-                        <NavLink href={RESUME_URL} isExternal={true}>Resume</NavLink>
+                        <Button asChild variant="outline" size="sm" className="font-headline uppercase text-xs tracking-widest px-6 py-4">
+                            <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">Resume</a>
+                        </Button>
                     </div>
                 </nav>
             </div>

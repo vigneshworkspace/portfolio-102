@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { GITHUB_URL, LINKEDIN_URL } from "@/lib/data";
+import { Github, Linkedin } from "lucide-react";
 
 export default function ContactSection() {
     const email = "vignesh.aidev@gmail.com";
@@ -9,9 +11,25 @@ export default function ContactSection() {
             <p className="max-w-xl mx-auto text-muted-foreground mb-8 font-mono">
                 I am actively seeking new roles where I can build meaningful technology. Let's connect and create something amazing.
             </p>
-            <Button asChild size="lg" className="font-headline uppercase text-base tracking-widest px-8 py-6">
-                <a href={`mailto:${email}`}>{email}</a>
-            </Button>
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                 <Button asChild size="lg" className="font-headline uppercase text-base tracking-widest px-8 py-6">
+                    <a href={`mailto:${email}`}>{email}</a>
+                </Button>
+                 <div className="flex items-center gap-2">
+                     <Button asChild variant="outline" size="icon" className="h-14 w-14">
+                        <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
+                           <Github className="h-6 w-6"/>
+                           <span className="sr-only">GitHub</span>
+                        </a>
+                     </Button>
+                      <Button asChild variant="outline" size="icon" className="h-14 w-14">
+                        <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
+                            <Linkedin className="h-6 w-6"/>
+                            <span className="sr-only">LinkedIn</span>
+                        </a>
+                      </Button>
+                 </div>
+            </div>
         </section>
     );
 }
