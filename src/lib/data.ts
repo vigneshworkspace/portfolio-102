@@ -16,6 +16,24 @@ export const SKILLS = [
 
 export const EXPERIENCE = [
     {
+        company: "EK Technologies",
+        title: "Full Stack Intern",
+        date: "May 2024 - June 2024",
+        description: "Contributed to the development of web applications, working on both front-end and back-end tasks to build and maintain features."
+    },
+    {
+        company: "Novitech",
+        title: "AI Intern (Virtual)",
+        date: "April 2024 - May 2024",
+        description: "Developed and implemented AI models, focusing on practical applications and contributing to AI-driven projects in a remote environment."
+    },
+    {
+        company: "Virtual Internship",
+        title: "Machine Learning Intern",
+        date: "March 2024 - April 2024",
+        description: "Gained hands-on experience in machine learning, including data preprocessing, model training, and evaluation on real-world datasets."
+    },
+    {
         company: "University Projects",
         title: "Student Developer",
         date: "2022 - Present",
