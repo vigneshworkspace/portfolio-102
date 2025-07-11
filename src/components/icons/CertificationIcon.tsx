@@ -32,11 +32,13 @@ export default function CertificationIcon({ title }: CertificationIconProps) {
     if (lowerCaseTitle.includes('c++')) {
         return <CppIcon />;
     }
-    if (lowerCaseTitle.includes('c')) {
+    if (lowerCaseTitle.includes('c') && !lowerCaseTitle.includes('c++')) {
         return <CIcon />;
     }
     if (lowerCaseTitle.includes('tensorflow')) {
         return <TensorFlowIcon />;
     }
+    
+    // Default award icon for others like Python, Java, ML, Quantum Computing etc.
     return <Award className="h-6 w-6 text-muted-foreground group-hover:text-primary transition-colors duration-300" />;
 }
