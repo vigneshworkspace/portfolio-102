@@ -20,6 +20,7 @@ export default {
         body: ['Inter', 'sans-serif'],
         headline: ['Roboto Mono', 'monospace'],
         mono: ['Roboto Mono', 'monospace'],
+        logo: ['Playfair Display', 'serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
