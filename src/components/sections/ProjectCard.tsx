@@ -54,7 +54,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
     return (
         <div className="project-card-container group">
-            <div className="grid md:grid-cols-2 items-center bg-card border border-dashed border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:border-foreground">
+            <div className="grid md:grid-cols-2 items-center bg-card/50 backdrop-blur-sm border border-dashed border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:border-foreground">
                 <div className={cn("p-8 md:p-12 order-2", isOdd && "md:order-1")}>
                     <p className="font-headline text-lg text-primary mb-2">{project.category}</p>
                     <h3 className="text-4xl font-bold font-headline mb-4 uppercase tracking-wider">{project.title}</h3>
@@ -68,20 +68,20 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                         <Button variant="secondary" asChild className="font-headline uppercase text-xs tracking-widest px-8 py-6 hover:bg-primary hover:text-primary-foreground">
                             <a href={project.link} target="_blank" rel="noopener noreferrer">View on GitHub</a>
                         </Button>
-                         <Button onClick={onSuggestTags} variant="outline" className="font-headline uppercase text-xs tracking-widest px-8 py-6">
-                            <Bot className="mr-2 h-4 w-4"/>
+                         <Button onClick={onSuggestTags} variant="outline" className="font-headline uppercase text-xs tracking-widest px-8 py-6 group/btn">
+                            <Bot className="mr-2 h-4 w-4 transition-all group-hover/btn:text-primary group-hover/btn:animate-pulse"/>
                             Suggest Tags
                         </Button>
                     </div>
                 </div>
-                <div className={cn("order-1 dot-matrix-bg opacity-30 h-64 md:h-full flex items-center justify-center", isOdd && "md:order-2")}>
+                <div className={cn("order-1 dot-matrix-bg h-64 md:h-full flex items-center justify-center", isOdd && "md:order-2")}>
                     <Image 
                         src={project.imageUrl}
                         alt={`${project.title} visual`}
                         width={600}
                         height={400}
                         data-ai-hint={project.imageHint}
-                        className="w-full h-full object-contain p-8 transition-transform duration-300 group-hover:scale-105"
+                        className="w-full h-full object-contain p-8 transition-transform duration-300 group-hover:scale-105 group-hover:opacity-80"
                     />
                 </div>
             </div>

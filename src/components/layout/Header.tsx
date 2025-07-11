@@ -34,8 +34,8 @@ export default function Header() {
         )}>
             <div className="container mx-auto px-6">
                 <nav className="flex justify-between items-center h-20">
-                    <Link href="#home" className="font-headline text-2xl font-bold tracking-tighter">
-                        V<span className="text-primary-foreground bg-primary rounded-sm p-1">AI</span>D
+                    <Link href="#home" className="font-headline text-2xl font-bold tracking-tighter group">
+                        V<span className="text-primary-foreground bg-primary rounded-sm p-1 group-hover:animate-pulse">AI</span>D
                     </Link>
                     <div className="hidden md:flex items-center space-x-6">
                         <NavLink href="#about">About</NavLink>
