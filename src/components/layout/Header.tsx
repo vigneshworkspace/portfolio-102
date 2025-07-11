@@ -3,12 +3,17 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import { GITHUB_URL, LINKEDIN_URL, RESUME_URL } from '@/lib/data';
 
-const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
-    <Link href={href} className="font-headline uppercase text-lg tracking-widest transition-colors duration-300 hover:text-primary hover:bg-primary-foreground rounded-sm px-2">
-        {children}
-    </Link>
-);
+const NavLink = ({ href, children, isExternal = false }: { href: string; children: React.ReactNode, isExternal?: boolean }) => {
+    const linkProps = isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {};
+    return (
+        <a href={href} {...linkProps} className="font-headline uppercase text-lg tracking-widest transition-colors duration-300 hover:text-primary hover:bg-primary-foreground rounded-sm px-2">
+            {children}
+        </a>
+    )
+};
+
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -37,6 +42,10 @@ export default function Header() {
                         <NavLink href="#experience">Experience</NavLink>
                         <NavLink href="#projects">Projects</NavLink>
                         <NavLink href="#contact">Contact</NavLink>
+                        <div className="w-[2px] h-6 bg-border/50"></div>
+                        <NavLink href={GITHUB_URL} isExternal={true}>GitHub</NavLink>
+                        <NavLink href={LINKEDIN_URL} isExternal={true}>LinkedIn</NavLink>
+                        <NavLink href={RESUME_URL} isExternal={true}>Resume</NavLink>
                     </div>
                 </nav>
             </div>
