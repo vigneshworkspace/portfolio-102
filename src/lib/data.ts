@@ -22,13 +22,13 @@ export const EXPERIENCE = [
         description: "Pursuing a comprehensive degree in computer science, focusing on software development, algorithms, and artificial intelligence principles."
     },
     {
-        company: "EK Technologies",
+        company: "EK technolegies",
         title: "Full Stack Intern",
         date: "May 2024 - June 2024",
         description: "Contributed to the development of web applications, working on both front-end and back-end tasks to build and maintain features."
     },
     {
-        company: "Novitech",
+        company: "Novitech R&D pvt ltd",
         title: "AI Intern (Virtual)",
         date: "April 2024 - May 2024",
         description: "Developed and implemented AI models, focusing on practical applications and contributing to AI-driven projects in a remote environment."
@@ -72,7 +72,7 @@ export const PROJECTS = [
         id: 3,
         category: "AI-Powered Tool",
         title: "Resume Genesis AI",
-        description: "An AI-driven platform that helps job seekers create and optimize their resumes for Applicant Tracking Systems (ATS). The tool provides an ATS score checker and generates ATS-friendly resume versions to improve visibility to recruiters.",
+        description: "An AI-driven platform that helps job seekers create and optimize their resumes for Applicant Tracking Systems (ATS). The tool provides an ATS score checker and generates an ATS-friendly resume version to improve visibility to recruiters.",
         tags: ["AI", "NLP", "React", "Node.js", "ATS"],
         imageUrl: "https://placehold.co/600x400.png",
         imageHint: "resume builder",
