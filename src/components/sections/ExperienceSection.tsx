@@ -17,8 +17,9 @@ export default function ExperienceSection() {
                                     <span className="text-primary">{exp.company}</span>
                                 ) : (
                                     exp.company
-                                )} // {exp.title}
+                                )}
                             </h3>
+                            <h4 className="font-headline text-xl uppercase tracking-wider text-muted-foreground/80">// {exp.title}</h4>
                             <p className="text-muted-foreground mt-3 text-sm leading-relaxed font-mono">{exp.description}</p>
                         </div>
                     ))}
