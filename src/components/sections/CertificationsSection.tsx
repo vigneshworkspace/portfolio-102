@@ -1,8 +1,7 @@
 import { CERTIFICATIONS } from '@/lib/data';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import Link from 'next/link';
-import { ArrowUpRight } from 'lucide-react';
+import CertificationIcon from '@/components/icons/CertificationIcon';
 
 export default function CertificationsSection() {
     return (
@@ -21,9 +20,9 @@ export default function CertificationsSection() {
                         >
                             <Card className="h-full transition-all duration-300 hover:border-foreground hover:shadow-2xl hover:-translate-y-2 bg-card/50 backdrop-blur-sm border-dashed">
                                 <CardHeader>
-                                    <div className="flex justify-between items-start">
-                                        <CardTitle className="font-headline text-2xl uppercase tracking-wider mb-2">{cert.title}</CardTitle>
-                                        <ArrowUpRight className="h-6 w-6 text-muted-foreground transition-transform duration-300 group-hover:text-primary group-hover:rotate-45" />
+                                    <div className="flex justify-between items-start mb-2">
+                                        <CardTitle className="font-headline text-2xl uppercase tracking-wider">{cert.title}</CardTitle>
+                                        <CertificationIcon title={cert.title} />
                                     </div>
                                     <CardDescription className="font-headline text-lg text-muted-foreground">{cert.issuer}</CardDescription>
                                     <div className="pt-4">
