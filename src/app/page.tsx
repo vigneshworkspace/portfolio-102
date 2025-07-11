@@ -15,9 +15,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col overflow-x-hidden">
       <Header />
       <main className="container mx-auto flex-grow px-6">
-        <FadeInSection>
-          <HeroSection />
-        </FadeInSection>
+        <HeroSection />
         <FadeInSection>
           <AboutSection />
         </FadeInSection>

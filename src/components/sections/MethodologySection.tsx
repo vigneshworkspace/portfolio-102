@@ -1,3 +1,5 @@
+import CircularProgress from "../animations/CircularProgress";
+
 const steps = [
     {
         step: "01",
@@ -20,15 +22,15 @@ export default function MethodologySection() {
     return (
         <section id="methodology" className="py-24 md:py-40">
             <div className="max-w-5xl mx-auto">
-                <p className="section-title mb-12 text-center">03 // My Process</p>
+                <p className="section-title mb-16 text-center">03 // My Process</p>
                 <div className="grid md:grid-cols-3 gap-10 text-center">
                     {steps.map((item) => (
                         <div key={item.step}>
-                            <div className="flex items-center justify-center h-16 w-16 mx-auto mb-4 border-2 border-foreground rounded-full font-headline font-bold text-xl">
-                                {item.step}
-                            </div>
-                            <h4 className="font-bold font-headline mb-2">{item.title}</h4>
-                            <p className="text-sm text-muted-foreground">{item.description}</p>
+                           <CircularProgress>
+                               <span className="font-headline font-bold text-xl">{item.step}</span>
+                           </CircularProgress>
+                            <h4 className="font-bold font-headline mt-6 mb-2">{item.title}</h4>
+                            <p className="text-sm text-muted-foreground max-w-xs mx-auto">{item.description}</p>
                         </div>
                     ))}
                 </div>
