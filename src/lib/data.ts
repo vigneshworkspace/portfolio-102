@@ -17,9 +17,9 @@ export const SKILLS = [
 export const EXPERIENCE = [
     {
         company: "Sathyabama Institute of Science and Technology",
-        title: "B.E. Computer Science & Engineering",
-        date: "2022 - Present",
-        description: "Pursuing a comprehensive degree in computer science, focusing on software development, algorithms, and artificial intelligence principles."
+        title: "B.E. Computer Science & Engineering with specialization in AI",
+        date: "2022 - 2025",
+        description: "Currently pursuing a degree with a specialization in Artificial Intelligence, focusing on machine learning, software development, and advanced algorithms."
     },
     {
         company: "EK technolegies",
