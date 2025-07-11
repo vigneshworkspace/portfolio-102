@@ -8,7 +8,7 @@ export default function HeroSection() {
             <div className="dot-matrix-bg absolute inset-0 -z-10 opacity-30" />
             <div className="py-24 md:py-32">
               <FadeInSection>
-                  <h1 className="text-6xl md:text-8xl lg:text-9xl font-headline tracking-widest uppercase">
+                  <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline tracking-widest uppercase">
                       Vigneshwaran
                   </h1>
               </FadeInSection>
