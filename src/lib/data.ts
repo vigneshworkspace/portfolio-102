@@ -1,3 +1,4 @@
+
 export const SKILLS = [
     {
         title: "Frontend & Backend",
@@ -63,20 +64,38 @@ export const PROJECTS = [
 
 export const CERTIFICATIONS = [
     {
-        title: "AI Programming with Python",
-        issuer: "Online University",
-        date: "2024",
-        link: "#"
-    },
-    {
-        title: "Full-Stack Web Development",
-        issuer: "Coding Bootcamp",
+        title: "C",
+        issuer: "CADD Academy",
         date: "2023",
         link: "#"
     },
     {
-        title: "TensorFlow Developer Certificate",
-        issuer: "Google",
+        title: "C++",
+        issuer: "CADD Academy",
+        date: "2023",
+        link: "#"
+    },
+    {
+        title: "Java",
+        issuer: "NPTEL",
+        date: "2024",
+        link: "#"
+    },
+     {
+        title: "Python",
+        issuer: "Online Course",
+        date: "2024",
+        link: "#"
+    },
+    {
+        title: "Machine Learning",
+        issuer: "Udemy",
+        date: "2024",
+        link: "#"
+    },
+    {
+        title: "Quantum Computing with AI",
+        issuer: "Udemy",
         date: "2024",
         link: "#"
     }
