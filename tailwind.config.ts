@@ -18,8 +18,8 @@ export default {
     extend: {
       fontFamily: {
         body: ['Inter', 'sans-serif'],
-        headline: ['Roboto Mono', 'monospace'],
-        code: ['Roboto Mono', 'monospace'],
+        headline: ['VT323', 'monospace'],
+        mono: ['Roboto Mono', 'monospace'],
       },
       colors: {
         background: 'hsl(var(--background))',

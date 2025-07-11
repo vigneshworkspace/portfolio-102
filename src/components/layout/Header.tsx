@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
-    <Link href={href} className="font-headline uppercase text-xs tracking-widest transition-colors duration-300 hover:text-primary">
+    <Link href={href} className="font-headline uppercase text-lg tracking-widest transition-colors duration-300 hover:text-primary hover:bg-primary-foreground rounded-sm px-2">
         {children}
     </Link>
 );
@@ -24,15 +24,15 @@ export default function Header() {
 
     return (
         <header className={cn(
-            "fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-md z-50 transition-all duration-300",
-            isScrolled ? "border-b border-border shadow-md" : "border-b border-transparent"
+            "fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-sm z-50 transition-all duration-300",
+            isScrolled ? "border-b border-border shadow-lg" : "border-b border-transparent"
         )}>
             <div className="container mx-auto px-6">
                 <nav className="flex justify-between items-center h-20">
-                    <Link href="#home" className="font-headline text-sm font-bold tracking-tighter">
-                        VIGNESHWARAN<span className="text-primary">.</span>
+                    <Link href="#home" className="font-headline text-2xl font-bold tracking-tighter">
+                        V<span className="text-primary-foreground bg-primary rounded-sm p-1">AI</span>D
                     </Link>
-                    <div className="hidden md:flex items-center space-x-10">
+                    <div className="hidden md:flex items-center space-x-6">
                         <NavLink href="#about">About</NavLink>
                         <NavLink href="#experience">Experience</NavLink>
                         <NavLink href="#projects">Projects</NavLink>

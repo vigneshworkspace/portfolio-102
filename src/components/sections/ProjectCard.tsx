@@ -54,18 +54,18 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
     return (
         <div className="project-card-container group">
-            <div className="grid md:grid-cols-2 items-center bg-card border border-border rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-accent">
+            <div className="grid md:grid-cols-2 items-center bg-card border border-dashed border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:border-foreground">
                 <div className={cn("p-8 md:p-12 order-2", isOdd && "md:order-1")}>
-                    <p className="font-headline text-xs text-primary mb-2">{project.category}</p>
-                    <h3 className="text-2xl font-bold font-headline mb-3">{project.title}</h3>
-                    <p className="text-muted-foreground mb-6 text-sm leading-relaxed">{project.description}</p>
+                    <p className="font-headline text-lg text-primary mb-2">{project.category}</p>
+                    <h3 className="text-4xl font-bold font-headline mb-4 uppercase tracking-wider">{project.title}</h3>
+                    <p className="text-muted-foreground mb-6 text-base leading-relaxed font-mono">{project.description}</p>
                     <div className="flex flex-wrap gap-2 mb-6">
                         {project.tags.map((tag) => (
-                            <Badge key={tag} variant="outline" className="font-headline uppercase tracking-wider transition-colors duration-300 group-hover:border-primary/50">{tag}</Badge>
+                            <Badge key={tag} variant="outline" className="font-headline uppercase text-sm tracking-wider transition-colors duration-300 group-hover:border-primary/50">{tag}</Badge>
                         ))}
                     </div>
                     <div className="flex flex-wrap gap-4">
-                        <Button variant="secondary" asChild className="font-headline uppercase text-xs tracking-widest px-8 py-6 hover:bg-foreground hover:text-background">
+                        <Button variant="secondary" asChild className="font-headline uppercase text-xs tracking-widest px-8 py-6 hover:bg-primary hover:text-primary-foreground">
                             <a href={project.link} target="_blank" rel="noopener noreferrer">View on GitHub</a>
                         </Button>
                          <Button onClick={onSuggestTags} variant="outline" className="font-headline uppercase text-xs tracking-widest px-8 py-6">
@@ -74,7 +74,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                         </Button>
                     </div>
                 </div>
-                <div className={cn("order-1 dot-matrix-bg h-64 md:h-full flex items-center justify-center", isOdd && "md:order-2")}>
+                <div className={cn("order-1 dot-matrix-bg opacity-30 h-64 md:h-full flex items-center justify-center", isOdd && "md:order-2")}>
                     <Image 
                         src={project.imageUrl}
                         alt={`${project.title} visual`}

@@ -4,24 +4,25 @@ import FadeInSection from '../animations/FadeInSection';
 
 export default function HeroSection() {
     return (
-        <section id="home" className="min-h-screen flex flex-col justify-center">
+        <section id="home" className="min-h-screen flex flex-col justify-center relative">
+            <div className="dot-matrix-bg absolute inset-0 -z-10 opacity-30" />
             <div className="py-24 md:py-32">
               <FadeInSection>
-                  <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-headline tracking-tighter leading-tight md:leading-tight">
-                      Full Stack & AI Developer<span className="text-primary">.</span>
+                  <h1 className="text-6xl md:text-8xl lg:text-9xl font-headline tracking-widest uppercase">
+                      Vigneshwaran
                   </h1>
               </FadeInSection>
                <FadeInSection>
-                <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-                    I craft intelligent, end-to-end solutions with a focus on clean code, robust architecture, and seamless user experiences.
+                <p className="mt-6 max-w-2xl text-xl text-muted-foreground font-headline tracking-wider">
+                    Full Stack & AI Developer crafting intelligent, end-to-end solutions.
                 </p>
                </FadeInSection>
                 <FadeInSection>
-                  <div className="mt-10 flex justify-start gap-4">
-                      <Button asChild size="lg" className="font-headline uppercase text-xs tracking-widest px-10 py-7">
+                  <div className="mt-12 flex justify-start gap-4">
+                      <Button asChild size="lg" className="font-headline uppercase text-base tracking-widest px-10 py-7">
                           <Link href="#projects">View Projects</Link>
                       </Button>
-                       <Button asChild variant="outline" size="lg" className="font-headline uppercase text-xs tracking-widest px-10 py-7">
+                       <Button asChild variant="outline" size="lg" className="font-headline uppercase text-base tracking-widest px-10 py-7">
                           <Link href="#contact">Get In Touch</Link>
                       </Button>
                   </div>

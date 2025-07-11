@@ -1,5 +1,3 @@
-import CircularProgress from "../animations/CircularProgress";
-
 const steps = [
     {
         step: "01",
@@ -25,12 +23,12 @@ export default function MethodologySection() {
                 <p className="section-title mb-16 text-center">03 // My Process</p>
                 <div className="grid md:grid-cols-3 gap-10 text-center">
                     {steps.map((item) => (
-                        <div key={item.step}>
-                           <CircularProgress>
-                               <span className="font-headline font-bold text-xl">{item.step}</span>
-                           </CircularProgress>
-                            <h4 className="font-bold font-headline mt-6 mb-2">{item.title}</h4>
-                            <p className="text-sm text-muted-foreground max-w-xs mx-auto">{item.description}</p>
+                        <div key={item.step} className="border border-dashed border-border/50 p-8 rounded-lg">
+                           <div className="mb-6">
+                               <span className="font-headline font-bold text-4xl text-primary">{item.step}</span>
+                           </div>
+                            <h4 className="font-bold font-headline text-2xl uppercase tracking-wider mt-6 mb-3">{item.title}</h4>
+                            <p className="text-sm text-muted-foreground max-w-xs mx-auto font-mono">{item.description}</p>
                         </div>
                     ))}
                 </div>
