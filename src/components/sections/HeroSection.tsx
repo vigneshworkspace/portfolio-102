@@ -5,7 +5,7 @@ import FadeInSection from '../animations/FadeInSection';
 export default function HeroSection() {
     return (
         <section id="home" className="min-h-screen flex flex-col justify-center relative">
-            <div className="dot-matrix-bg absolute inset-0 -z-10 opacity-30" />
+            <div className="dot-matrix-bg absolute inset-0 -z-10" />
             <div className="py-24 md:py-32">
               <FadeInSection>
                   <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline tracking-widest uppercase">
