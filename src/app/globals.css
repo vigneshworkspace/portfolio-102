@@ -65,4 +65,14 @@
   .section-title {
     @apply font-headline uppercase text-sm tracking-[0.3em] text-muted-foreground;
   }
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .fade-in-up.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -29,6 +29,32 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [suggestedTags, setSuggestedTags] = useState<string[]>([]);
     const [isLoading, setIsLoading] = useState(false);
+    const cardRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+
+        if (cardRef.current) {
+            observer.observe(cardRef.current);
+        }
+
+        return () => {
+            if (cardRef.current) {
+                // eslint-disable-next-line react-hooks/exhaustive-deps
+                observer.unobserve(cardRef.current);
+            }
+        };
+    }, []);
     
     const onSuggestTags = async () => {
         setIsModalOpen(true);
@@ -53,8 +79,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
     const isOdd = index % 2 !== 0;
 
     return (
-        <div className="project-card-container group">
-            <div className="grid md:grid-cols-2 items-center bg-card/50 backdrop-blur-sm border border-dashed border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:border-accent">
+        <div ref={cardRef} className="project-card-container group fade-in-up">
+            <div className="grid md:grid-cols-2 items-center bg-card/50 backdrop-blur-sm border border-dashed border-border/50 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:border-accent hover:scale-[1.02] hover:-translate-y-2">
                 <div className={cn("p-8 md:p-12 order-2", isOdd && "md:order-1")}>
                     <p className="font-headline text-lg text-primary mb-2">{project.category}</p>
                     <h3 className="text-4xl font-bold font-headline mb-4 uppercase tracking-wider">{project.title}</h3>
@@ -81,7 +107,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                         width={600}
                         height={400}
                         data-ai-hint={project.imageHint}
-                        className="w-full h-full object-contain p-8 transition-transform duration-300 group-hover:scale-105 group-hover:opacity-80"
+                        className="w-full h-full object-contain p-8 transition-transform duration-500 ease-in-out group-hover:scale-105"
                     />
                 </div>
             </div>
