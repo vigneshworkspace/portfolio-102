@@ -1,7 +1,7 @@
 import { CERTIFICATIONS } from '@/lib/data';
-import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { Card } from '@/components/ui/card';
 import CertificationIcon from '@/components/icons/CertificationIcon';
+import { ArrowRight } from 'lucide-react';
 
 export default function CertificationsSection() {
     return (
@@ -9,7 +9,7 @@ export default function CertificationsSection() {
              <div className="dot-matrix-bg absolute inset-0 -z-10 opacity-30" />
             <div className="max-w-5xl mx-auto">
                 <p className="section-title mb-12 text-center">06 // Certifications</p>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 gap-6">
                     {CERTIFICATIONS.map((cert) => (
                         <a 
                             key={cert.title} 
@@ -18,17 +18,22 @@ export default function CertificationsSection() {
                             rel="noopener noreferrer" 
                             className="group block"
                         >
-                            <Card className="h-full transition-all duration-300 hover:border-primary hover:shadow-2xl hover:-translate-y-2 bg-card/50 backdrop-blur-sm border-dashed">
-                                <CardHeader>
-                                    <div className="flex justify-between items-start mb-2">
-                                        <CardTitle className="font-headline text-2xl uppercase tracking-wider">{cert.title}</CardTitle>
-                                        <CertificationIcon title={cert.title} />
+                            <Card className="h-full bg-card/50 backdrop-blur-sm border-dashed border border-border/50 transition-all duration-300 hover:bg-muted/50 hover:border-l-4 hover:border-l-primary">
+                                <div className="p-6 flex items-center justify-between">
+                                    <div className="flex items-center gap-6">
+                                        <div className="flex-shrink-0">
+                                            <CertificationIcon title={cert.title} />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-headline text-xl uppercase tracking-wider text-foreground group-hover:text-primary transition-colors duration-300">{cert.title}</h4>
+                                            <p className="font-headline text-base text-muted-foreground">{cert.issuer}</p>
+                                        </div>
                                     </div>
-                                    <CardDescription className="font-headline text-lg text-muted-foreground">{cert.issuer}</CardDescription>
-                                    <div className="pt-4">
-                                        <Badge variant="secondary" className="font-headline text-base">{cert.date}</Badge>
+                                    <div className="flex items-center gap-2 text-muted-foreground group-hover:text-primary transition-colors duration-300">
+                                       <span className="text-sm font-mono hidden sm:inline">View</span>
+                                       <ArrowRight className="h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1" />
                                     </div>
-                                </CardHeader>
+                                </div>
                             </Card>
                         </a>
                     ))}
