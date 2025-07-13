@@ -1,7 +1,13 @@
+"use client";
+
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import FadeInSection from '../animations/FadeInSection';
-import SplineScene from './SplineScene';
+import dynamic from 'next/dynamic';
+
+const SplineScene = dynamic(() => import('./SplineScene'), {
+    ssr: false,
+});
 
 
 export default function HeroSection() {
