@@ -1,4 +1,5 @@
 
+
 export const SKILLS = [
     {
         title: "Frontend & Backend",
@@ -35,7 +36,7 @@ export const EXPERIENCE = [
     },
     {
         company: "Novitech R&D pvt ltd",
-        title: "Machine Learning Intern (virtual)",
+        title: "Machine Learning Intern(virtual)",
         date: "March 2024 - April 2024",
         description: "Gained hands-on experience in machine learning, including data preprocessing, model training, and evaluation on real-world datasets."
     },
@@ -54,9 +55,10 @@ export const PROJECTS = [
         title: "DocMind AI",
         description: "An intelligent PDF analysis tool to help students prepare for exams. Features include AI-powered summaries, flashcards, mind maps, a smart chatbot that answers questions from the PDF, and interactive quizzes. It offers both a deep-learning 'Normal Mode' and a last-minute 'Panic Mode' to tailor the study experience.",
         tags: ["Python", "FastAPI", "Gemini", "Vector Search", "OCR"],
-        imageUrl: "https://placehold.co/600x400.png",
+        imageUrl: "https://i.ibb.co/3k5g7b2/Screenshot-2024-07-11-at-12-07-07-PM.png",
         imageHint: "document analysis",
-        link: "#",
+        link: "https://github.com/vigneshworkspace/DocMind-AI-Tool",
+        gradient: "from-emerald-400 via-cyan-500 to-blue-500",
     },
     {
         id: 2,
@@ -66,7 +68,9 @@ export const PROJECTS = [
         tags: ["Python", "CNN", "TensorFlow", "Chatbot", "Medical Imaging"],
         imageUrl: "https://placehold.co/600x400.png",
         imageHint: "xray analysis",
-        link: "#",
+        link: "https://github.com/vigneshworkspace/X-Ray-Xpert-AI",
+        gradient: "from-pink-400 via-purple-500 to-indigo-500",
+        status: "Ongoing",
     },
     {
         id: 3,
@@ -76,9 +80,44 @@ export const PROJECTS = [
         tags: ["AI", "NLP", "React", "Node.js", "ATS"],
         imageUrl: "https://placehold.co/600x400.png",
         imageHint: "resume builder",
-        link: "#",
+        link: "https://github.com/vigneshworkspace/Resume-Genesis-AI",
+        gradient: "from-yellow-400 via-orange-500 to-red-500",
+    },
+    {
+        id: 4,
+        category: "AI Chatbot",
+        title: "Offline RAG Chatbot",
+        description: "A semantic document querying system that works without internet connectivity, enabling intelligent offline search using local resources.",
+        tags: ["LangChain", "FAISS", "Hugging Face", "Streamlit"],
+        imageUrl: "https://placehold.co/600x400.png",
+        imageHint: "offline chatbot",
+        link: "https://github.com/vigneshworkspace/Offline-RAG-Chatbot",
+        gradient: "from-teal-400 via-green-500 to-emerald-500",
+    },
+    {
+        id: 5,
+        category: "IoT System",
+        title: "Gas Leakage Detection System",
+        description: "An IoT-based real-time safety system with a comprehensive monitoring dashboard and emergency alert notifications.",
+        tags: ["ESP32", "MQ Sensors", "Blynk", "Firebase", "Twilio"],
+        imageUrl: "https://placehold.co/600x400.png",
+        imageHint: "iot sensor",
+        link: "https://github.com/vigneshworkspace/Gas-Leakage-Detection-System",
+        gradient: "from-red-400 via-pink-500 to-rose-500",
+    },
+    {
+        id: 6,
+        category: "Edge AI",
+        title: "Edge AI Anomaly Detector",
+        description: "An autoencoder-based anomaly detection system optimized for deployment on embedded devices and edge computing platforms.",
+        tags: ["TensorFlow Lite", "Keras", "Python", "Edge Computing"],
+        imageUrl: "https://placehold.co/600x400.png",
+        imageHint: "edge computing",
+        link: "https://github.com/vigneshworkspace/Edge-AI-Anomaly-Detector-using-Autoencoder",
+        gradient: "from-indigo-400 via-purple-500 to-pink-500",
     }
 ];
+
 
 export const CERTIFICATIONS = [
     {
