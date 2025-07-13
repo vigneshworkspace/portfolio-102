@@ -1,11 +1,14 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import FadeInSection from '../animations/FadeInSection';
+import SplineScene from './SplineScene';
+
 
 export default function HeroSection() {
     return (
         <section id="home" className="min-h-screen flex flex-col justify-center relative">
-            <div className="py-24 md:py-32">
+            <SplineScene />
+            <div className="py-24 md:py-32 relative z-10">
               <FadeInSection>
                   <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline tracking-widest uppercase">
                       Vigneshwaran
