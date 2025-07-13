@@ -62,7 +62,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
     }, []);
 
     return (
-        <div ref={cardRef} className="fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
+        <div ref={cardRef} className="fade-in-up group" style={{ animationDelay: `${index * 0.1}s` }}>
             <Card className="group/card h-full overflow-hidden bg-card/50 backdrop-blur-xl border border-dashed border-border/50 hover:border-primary/80 transition-all duration-700 hover:scale-105 cursor-pointer flex flex-col">
                 <div className="relative overflow-hidden h-48">
                     <div className={cn("absolute inset-0 bg-gradient-to-br opacity-60 group-hover/card:opacity-80 transition-opacity duration-500", project.gradient)} />

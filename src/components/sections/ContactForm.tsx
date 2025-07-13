@@ -21,7 +21,7 @@ export default function ContactForm() {
     };
 
     return (
-        <Card className="p-8 bg-card/50 backdrop-blur-sm border border-dashed border-border/50 hover:border-primary transition-all duration-300">
+        <Card className="p-8 bg-card/50 backdrop-blur-sm border border-dashed border-border/50 group-hover:border-primary transition-all duration-300">
             <h3 className="text-2xl font-bold font-headline mb-6 text-center uppercase tracking-wider">Send a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
@@ -33,9 +33,9 @@ export default function ContactForm() {
                 <div className="space-y-2">
                     <Textarea placeholder="Your Message" rows={5} required className="bg-muted/50 font-mono"/>
                 </div>
-                <Button type="submit" className="w-full h-12 font-headline uppercase text-base tracking-widest group">
+                <Button type="submit" className="w-full h-12 font-headline uppercase text-base tracking-widest group/btn">
                     Send Message
-                    <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform"/>
+                    <Send className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform"/>
                 </Button>
             </form>
         </Card>
