@@ -60,7 +60,7 @@
 
 @layer utilities {
   .dot-matrix-bg {
-    @apply bg-[radial-gradient(hsla(var(--primary),0.3)_0.5px,transparent_0.5px)] [background-size:10px_10px];
+    @apply bg-[radial-gradient(hsla(var(--muted-foreground),0.3)_0.5px,transparent_0.5px)] [background-size:10px_10px];
   }
   .section-title {
     @apply font-headline uppercase text-sm tracking-[0.3em] text-muted-foreground;
