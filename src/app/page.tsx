@@ -12,7 +12,7 @@ import FadeInSection from '@/components/animations/FadeInSection';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col overflow-x-hidden">
+    <div className="flex min-h-screen flex-col overflow-x-hidden dot-matrix-bg">
       <Header />
       <main className="container mx-auto flex-grow px-6">
         <HeroSection />

@@ -6,7 +6,6 @@ import { ArrowRight } from 'lucide-react';
 export default function CertificationsSection() {
     return (
         <section id="certifications" className="py-24 md:py-40 relative">
-             <div className="dot-matrix-bg absolute inset-0 -z-10" />
             <div className="max-w-5xl mx-auto">
                 <p className="section-title mb-12 text-center">06 // Certifications</p>
                 <div className="grid md:grid-cols-2 gap-6">

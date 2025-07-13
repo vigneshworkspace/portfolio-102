@@ -4,7 +4,6 @@ import { Badge } from '@/components/ui/badge';
 export default function BadgesSection() {
     return (
         <section id="badges" className="py-24 md:py-40 relative">
-            <div className="dot-matrix-bg absolute inset-0 -z-10" />
             <div className="max-w-5xl mx-auto">
                 <p className="section-title mb-12 text-center">05 // Skills & Achievements</p>
                 <div className="border border-dashed border-border/50 p-4 rounded-lg">
