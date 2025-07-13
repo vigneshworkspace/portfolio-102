@@ -16,9 +16,9 @@ export default function CertificationsSection() {
                             href={cert.link} 
                             target="_blank" 
                             rel="noopener noreferrer" 
-                            className="group block"
+                            className="group relative block"
                         >
-                            <Card className="h-full bg-card/50 backdrop-blur-sm border-dashed border border-border/50 transition-all duration-300 hover:bg-muted/50 hover:border-l-4 hover:border-l-primary">
+                            <Card className="h-full bg-card/50 backdrop-blur-sm border-dashed border border-border/50 transition-all duration-300 group-hover:bg-muted/50">
                                 <div className="p-6 flex items-center justify-between">
                                     <div className="flex items-center gap-6">
                                         <div className="flex-shrink-0">
@@ -35,6 +35,9 @@ export default function CertificationsSection() {
                                     </div>
                                 </div>
                             </Card>
+                             {/* Animated borders */}
+                            <span className="absolute bottom-0 left-0 h-0 w-1 bg-primary transition-all duration-300 group-hover:h-full"></span>
+                            <span className="absolute bottom-0 left-0 h-1 w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
                         </a>
                     ))}
                 </div>
