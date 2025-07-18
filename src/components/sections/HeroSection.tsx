@@ -3,17 +3,10 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import FadeInSection from '../animations/FadeInSection';
-import dynamic from 'next/dynamic';
-
-const SplineScene = dynamic(() => import('./SplineScene'), {
-    ssr: false,
-});
-
 
 export default function HeroSection() {
     return (
         <section id="home" className="min-h-screen flex flex-col justify-center relative">
-            <SplineScene />
             <div className="py-24 md:py-32 relative z-10">
               <FadeInSection>
                   <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline tracking-widest uppercase">
