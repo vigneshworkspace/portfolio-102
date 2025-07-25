@@ -9,7 +9,6 @@ import CertificationsSection from '@/components/sections/CertificationsSection';
 import BadgesSection from '@/components/sections/BadgesSection';
 import ContactSection from '@/components/sections/ContactSection';
 import FadeInSection from '@/components/animations/FadeInSection';
-import SplineScene from '@/components/sections/SplineScene';
 
 export default function Home() {
   return (
