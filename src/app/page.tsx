@@ -10,6 +10,7 @@ import BadgesSection from '@/components/sections/BadgesSection';
 import FadeInSection from '@/components/animations/FadeInSection';
 import LetsMeetSection from '@/components/sections/LetsMeetSection';
 import CreativeWritingsSection from '@/components/sections/CreativeWritingsSection';
+import TechnologiesSection from '@/components/sections/TechnologiesSection';
 
 export default function Home() {
   return (
@@ -27,6 +28,9 @@ export default function Home() {
           </FadeInSection>
           <FadeInSection>
             <MethodologySection />
+          </FadeInSection>
+          <FadeInSection>
+            <TechnologiesSection />
           </FadeInSection>
           <FadeInSection>
             <ProjectsSection />

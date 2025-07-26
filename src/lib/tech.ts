@@ -1,0 +1,18 @@
+export const TECHNOLOGIES = [
+  { name: 'React', icon: 'React' },
+  { name: 'Next.js', icon: 'Nextdotjs' },
+  { name: 'TypeScript', icon: 'Typescript' },
+  { name: 'Node.js', icon: 'Nodedotjs' },
+  { name: 'Python', icon: 'Python' },
+  { name: 'PyTorch', icon: 'Pytorch' },
+  { name: 'TensorFlow', icon: 'Tensorflow' },
+  { name: 'PostgreSQL', icon: 'Postgresql' },
+  { name: 'MongoDB', icon: 'Mongodb' },
+  { name: 'GraphQL', icon: 'Graphql' },
+  { name: 'Docker', icon: 'Docker' },
+  { name: 'AWS', icon: 'Amazonaws' },
+  { name: 'Firebase', icon: 'Firebase' },
+  { name: 'Git', icon: 'Git' },
+  { name: 'Figma', icon: 'Figma' },
+  { name: 'TailwindCSS', icon: 'Tailwindcss' },
+];
