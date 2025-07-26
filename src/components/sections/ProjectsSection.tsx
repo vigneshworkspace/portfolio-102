@@ -19,7 +19,7 @@ export default function ProjectsSection() {
                     <div className="md:col-span-1 sticky top-24">
                         <div>
                             <p className="section-title mb-4">03 // Featured Creations</p>
-                            <h2 className="text-4xl md:text-5xl font-bold font-headline uppercase tracking-wider">My Universe</h2>
+                            <h2 className="text-4xl md:text-5xl font-bold font-headline uppercase tracking-wider">My Works</h2>
                             <p className="text-muted-foreground mt-4 font-mono max-w-xs">
                                 A selection of projects that showcase my passion for building intelligent and practical solutions.
                             </p>
