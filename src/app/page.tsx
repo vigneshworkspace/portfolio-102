@@ -14,7 +14,7 @@ import TechnologiesSection from '@/components/sections/TechnologiesSection';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col overflow-x-hidden relative">
+    <div className="flex min-h-screen flex-col relative">
       <div className="fixed inset-0 z-0 dot-matrix-bg"></div>
       <div className="relative z-10">
         <Header />
