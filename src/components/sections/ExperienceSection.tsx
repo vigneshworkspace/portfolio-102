@@ -49,11 +49,12 @@ export default function ExperienceSection() {
                                 <div
                                     key={index}
                                     ref={(el) => (itemsRef.current[index] = el)}
-                                    className={`fade-in-up flex items-center ${isLeft ? 'flex-row' : 'flex-row-reverse'}`}
+                                    className={`fade-in-up flex items-center group ${isLeft ? 'flex-row' : 'flex-row-reverse'}`}
                                 >
                                     {/* Card Content */}
-                                    <div className={`w-1/2 ${isLeft ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                                        <div className="p-6 bg-card/50 backdrop-blur-sm border border-dashed border-border/50 rounded-lg group transition-all duration-300 hover:border-primary hover:shadow-2xl hover:-translate-y-1">
+                                    <div className={`w-1/2 relative ${isLeft ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
+                                        <div className="absolute inset-0 bg-primary/10 rounded-lg blur-xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+                                        <div className="relative p-6 bg-card/50 backdrop-blur-sm border border-dashed border-border/50 rounded-lg transition-all duration-300 group-hover:border-primary group-hover:shadow-2xl group-hover:-translate-y-1">
                                             <p className="font-headline text-lg text-muted-foreground">{exp.date}</p>
                                             <h3 className="font-bold font-headline text-2xl mt-1 uppercase tracking-wider">
                                                 {companiesToHighlight.includes(exp.company) ? (
@@ -68,7 +69,7 @@ export default function ExperienceSection() {
                                     </div>
                                     {/* Timeline Dot */}
                                     <div className="relative z-10">
-                                        <div className="h-4 w-4 bg-primary rounded-full border-4 border-background ring-4 ring-primary/20 shadow-lg"></div>
+                                        <div className="h-4 w-4 bg-primary rounded-full border-4 border-background ring-4 ring-primary/20 shadow-lg transition-transform duration-300 group-hover:scale-125"></div>
                                     </div>
                                     {/* Spacer */}
                                     <div className="w-1/2"></div>
