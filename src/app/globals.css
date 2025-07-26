@@ -24,6 +24,7 @@
     --input: 0 0% 89.8%;
     --ring: 356 79% 56%;
     --radius: 0.3rem;
+    --grid-color: hsla(0, 0%, 0%, 0.1);
   }
 
   .dark {
@@ -46,6 +47,7 @@
     --border: 0 0% 20%;
     --input: 0 0% 20%;
     --ring: 0 0% 98%;
+    --grid-color: hsla(40, 50%, 80%, 0.15);
   }
 }
 
@@ -62,12 +64,12 @@
   .dot-matrix-bg {
     background-image: linear-gradient(
         to right,
-        hsla(40, 50%, 80%, 0.1) 1px,
+        var(--grid-color) 1px,
         transparent 1px
       ),
       linear-gradient(
         to bottom,
-        hsla(40, 50%, 80%, 0.1) 1px,
+        var(--grid-color) 1px,
         transparent 1px
       );
     background-size: 20px 20px;
