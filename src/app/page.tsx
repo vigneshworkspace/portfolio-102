@@ -7,9 +7,9 @@ import MethodologySection from '@/components/sections/MethodologySection';
 import ProjectsSection from '@/components/sections/ProjectsSection';
 import CertificationsSection from '@/components/sections/CertificationsSection';
 import BadgesSection from '@/components/sections/BadgesSection';
-import ContactSection from '@/components/sections/ContactSection';
 import FadeInSection from '@/components/animations/FadeInSection';
 import LetsMeetSection from '@/components/sections/LetsMeetSection';
+import CreativeWritingsSection from '@/components/sections/CreativeWritingsSection';
 
 export default function Home() {
   return (
@@ -38,10 +38,10 @@ export default function Home() {
             <CertificationsSection />
           </FadeInSection>
           <FadeInSection>
-            <LetsMeetSection />
+            <CreativeWritingsSection />
           </FadeInSection>
           <FadeInSection>
-            <ContactSection />
+            <LetsMeetSection />
           </FadeInSection>
         </main>
         <Footer />
