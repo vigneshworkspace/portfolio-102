@@ -27,7 +27,7 @@ export default function ProjectsSection() {
                              <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent rounded-full mt-6" />
                         </div>
                     </div>
-                    <div className="md:col-span-2 space-y-16">
+                    <div className="md:col-span-2 space-y-8">
                         {PROJECTS.map((project) => {
                              const IconComponent = iconMap[project.title] || ExternalLink;
                              return (
@@ -38,28 +38,30 @@ export default function ProjectsSection() {
                                     rel="noopener noreferrer"
                                     className="block group"
                                 >
-                                    <div className="flex gap-6">
-                                        <div className="flex-shrink-0">
-                                            <div className="w-16 h-16 rounded-lg bg-card border border-dashed border-border/50 flex items-center justify-center group-hover:border-primary transition-colors duration-300">
-                                                 <IconComponent className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
+                                    <div className="border border-dashed border-border/50 rounded-lg p-6 bg-card/50 backdrop-blur-sm transition-all duration-300 hover:border-primary hover:-translate-y-1">
+                                        <div className="flex gap-6">
+                                            <div className="flex-shrink-0">
+                                                <div className="w-16 h-16 rounded-lg bg-card border border-dashed border-border/50 flex items-center justify-center group-hover:border-primary transition-colors duration-300">
+                                                    <IconComponent className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div>
-                                            <div className="flex items-center gap-4">
-                                                <h3 className="font-headline text-2xl font-bold uppercase tracking-wider text-foreground group-hover:text-primary transition-colors duration-300">{project.title}</h3>
-                                                <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                            </div>
-                                            <p className="font-mono text-muted-foreground/80 mt-1">{project.category}</p>
-                                            <p className="font-mono text-muted-foreground mt-4 leading-relaxed">{project.description}</p>
-                                             <div className="flex flex-wrap gap-2 mt-4">
-                                                {project.tags.map((tag) => (
-                                                    <div
-                                                        key={tag}
-                                                        className="text-xs font-mono text-primary/80 bg-primary/10 border border-primary/20 rounded-full px-3 py-1"
-                                                    >
-                                                        {tag}
-                                                    </div>
-                                                ))}
+                                            <div>
+                                                <div className="flex items-center gap-4">
+                                                    <h3 className="font-headline text-2xl font-bold uppercase tracking-wider text-foreground group-hover:text-primary transition-colors duration-300">{project.title}</h3>
+                                                    <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                                </div>
+                                                <p className="font-mono text-muted-foreground/80 mt-1">{project.category}</p>
+                                                <p className="font-mono text-muted-foreground mt-4 leading-relaxed">{project.description}</p>
+                                                <div className="flex flex-wrap gap-2 mt-4">
+                                                    {project.tags.map((tag) => (
+                                                        <div
+                                                            key={tag}
+                                                            className="text-xs font-mono text-primary/80 bg-primary/10 border border-primary/20 rounded-full px-3 py-1"
+                                                        >
+                                                            {tag}
+                                                        </div>
+                                                    ))}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
