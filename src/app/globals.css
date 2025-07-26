@@ -83,20 +83,4 @@
   .group.hover ~ .dot-matrix-bg {
     opacity: 0.1;
   }
-
-  @keyframes float-rotate {
-    0% {
-      transform: translateY(0) rotate(0deg);
-    }
-    50% {
-      transform: translateY(-10px) rotate(5deg);
-    }
-    100% {
-      transform: translateY(0) rotate(0deg);
-    }
-  }
-
-  .animate-float-rotate {
-    animation: float-rotate 6s ease-in-out infinite;
-  }
 }
