@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import Chatbot from '@/components/chat/Chatbot';
 import { ThemeProvider } from '@/components/theme-provider';
+import Cursor from '@/components/cursor/Cursor';
 
 export const metadata: Metadata = {
   title: 'Vigneshwaran // Full Stack & AI Developer',
@@ -35,6 +36,7 @@ export default function RootLayout({
           defaultTheme="dark"
           disableTransitionOnChange
         >
+          <Cursor />
           {children}
           <Toaster />
           <Chatbot />

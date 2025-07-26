@@ -58,20 +58,16 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  body, a, button {
+    cursor: none;
+  }
 }
 
 @layer utilities {
   .dot-matrix-bg {
-    background-image: linear-gradient(
-        to right,
-        var(--grid-color) 1px,
-        transparent 1px
-      ),
-      linear-gradient(
-        to bottom,
-        var(--grid-color) 1px,
-        transparent 1px
-      );
+    background-image:
+      radial-gradient(var(--grid-color) 1px, transparent 0);
     background-size: 20px 20px;
     transition: opacity 0.5s ease-in-out;
   }
