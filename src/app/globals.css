@@ -47,7 +47,7 @@
     --border: 0 0% 20%;
     --input: 0 0% 20%;
     --ring: 0 0% 98%;
-    --grid-color: hsla(40, 50%, 80%, 0.15);
+    --grid-color: hsla(40, 50%, 80%, 0.08);
   }
 }
 
@@ -72,7 +72,7 @@
         var(--grid-color) 1px,
         transparent 1px
       );
-    background-size: 20px 20px;
+    background-size: 40px 40px;
     transition: opacity 0.5s ease-in-out;
   }
 
