@@ -7,7 +7,7 @@ export default function CertificationsSection() {
     return (
         <section id="certifications" className="py-24 md:py-40 relative">
             <div className="max-w-5xl mx-auto">
-                <p className="section-title mb-12 text-center">06 // Certifications</p>
+                <p className="section-title mb-12 text-center">05 // Certifications</p>
                 <div className="grid md:grid-cols-2 gap-6">
                     {CERTIFICATIONS.map((cert) => (
                         <a 

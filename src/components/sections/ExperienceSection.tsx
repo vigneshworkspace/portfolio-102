@@ -37,7 +37,7 @@ export default function ExperienceSection() {
     return (
         <section id="experience" className="py-24 md:py-40">
             <div className="max-w-4xl mx-auto">
-                <p className="section-title mb-16 text-center">02 // Experience</p>
+                <p className="section-title mb-16 text-center">01 // Experience</p>
                 <div className="relative">
                     {/* Vertical line */}
                     <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-border border-dashed"></div>

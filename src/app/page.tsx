@@ -9,6 +9,7 @@ import CertificationsSection from '@/components/sections/CertificationsSection';
 import BadgesSection from '@/components/sections/BadgesSection';
 import ContactSection from '@/components/sections/ContactSection';
 import FadeInSection from '@/components/animations/FadeInSection';
+import LetsMeetSection from '@/components/sections/LetsMeetSection';
 
 export default function Home() {
   return (
@@ -35,6 +36,9 @@ export default function Home() {
           </FadeInSection>
           <FadeInSection>
             <CertificationsSection />
+          </FadeInSection>
+          <FadeInSection>
+            <LetsMeetSection />
           </FadeInSection>
           <FadeInSection>
             <ContactSection />

@@ -20,7 +20,7 @@ export default function MethodologySection() {
     return (
         <section id="methodology" className="py-24 md:py-40">
             <div className="max-w-5xl mx-auto">
-                <p className="section-title mb-16 text-center">03 // My Process</p>
+                <p className="section-title mb-16 text-center">02 // My Process</p>
                 <div className="grid md:grid-cols-3 gap-10 text-center">
                     {steps.map((item) => (
                         <div key={item.step} className="border border-dashed border-border/50 p-8 rounded-lg">

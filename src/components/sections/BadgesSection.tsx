@@ -5,7 +5,7 @@ export default function BadgesSection() {
     return (
         <section id="badges" className="py-24 md:py-40 relative">
             <div className="max-w-5xl mx-auto">
-                <p className="section-title mb-12 text-center">05 // Skills & Achievements</p>
+                <p className="section-title mb-12 text-center">04 // Skills & Achievements</p>
                 <div className="border border-dashed border-border/50 p-4 rounded-lg">
                     <div className="flex flex-wrap justify-center gap-3">
                         {BADGES.map((badgeText, index) => (
