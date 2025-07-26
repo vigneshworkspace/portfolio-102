@@ -16,7 +16,7 @@ export default function TechnologiesSection() {
             A collection of modern tools I use to build robust and efficient solutions.
           </p>
         </div>
-        <div className="relative w-full overflow-hidden">
+        <div className="relative w-full overflow-hidden py-4">
           <div className="flex animate-marquee hover:[animation-play-state:paused]">
             {allTech.map((tech, index) => (
               <div
