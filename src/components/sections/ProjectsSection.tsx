@@ -15,9 +15,9 @@ export default function ProjectsSection() {
     return (
         <section id="projects" className="py-24 md:py-40">
             <div className="container mx-auto">
-                <div className="grid md:grid-cols-3 gap-16">
-                    <div className="md:col-span-1">
-                        <div className="sticky top-24">
+                <div className="grid md:grid-cols-3 gap-16 items-start">
+                    <div className="md:col-span-1 sticky top-24">
+                        <div>
                             <p className="section-title mb-4">03 // Featured Creations</p>
                             <h2 className="text-4xl md:text-5xl font-bold font-headline uppercase tracking-wider">My Universe</h2>
                             <p className="text-muted-foreground mt-4 font-mono max-w-xs">
