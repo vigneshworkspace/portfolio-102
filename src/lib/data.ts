@@ -19,31 +19,31 @@ export const EXPERIENCE = [
     {
         company: "Martech AI",
         title: "AI Developer Intern",
-        date: "July 2024 - Present",
+        date: "July 2025 - Present",
         description: "As an AI Developer Intern, I contributed to cutting-edge AI projects, focusing on model development and integration."
     },
     {
         company: "EK technolegies",
         title: "Full Stack Intern",
-        date: "May 2024 - June 2024",
+        date: "May 2025 - June 2025",
         description: "Contributed to the development of web applications, working on both front-end and back-end tasks to build and maintain features."
     },
     {
         company: "Novitech R&D pvt ltd",
         title: "AI Intern (Virtual)",
-        date: "April 2024 - May 2024",
+        date: "April 2025 - May 2025",
         description: "Developed and implemented AI models, focusing on practical applications and contributing to AI-driven projects in a remote environment."
     },
     {
         company: "Novitech R&D pvt ltd",
         title: "Machine Learning Intern(virtual)",
-        date: "March 2024 - April 2024",
+        date: "March 2025 - April 2025",
         description: "Gained hands-on experience in machine learning, including data preprocessing, model training, and evaluation on real-world datasets."
     },
     {
         company: "Sathyabama Institute of Science and Technology",
         title: "B.E. Computer Science & Engineering with specialization in AI",
-        date: "2022 - 2025",
+        date: "2023 - 2027",
         description: "Currently pursuing a degree with a specialization in Artificial Intelligence, focusing on machine learning, software development, and advanced algorithms."
     },
     {
