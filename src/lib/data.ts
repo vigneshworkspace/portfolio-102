@@ -17,6 +17,12 @@ export const SKILLS = [
 
 export const EXPERIENCE = [
     {
+        company: "Martech AI",
+        title: "AI Developer Intern",
+        date: "July 2024 - Present",
+        description: "As an AI Developer Intern, I contributed to cutting-edge AI projects, focusing on model development and integration."
+    },
+    {
         company: "EK technolegies",
         title: "Full Stack Intern",
         date: "May 2024 - June 2024",
