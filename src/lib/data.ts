@@ -172,4 +172,4 @@ export const CERTIFICATIONS = [
 
 export const GITHUB_URL = "https://github.com/vigneshworkspace";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/vignesh-sist";
-export const RESUME_URL = "https://drive.google.com/file/d/1nUKoXZC4hQZ3aP9sbhw7uGQWlIayEVFc/view?usp=sharing";
+export const RESUME_URL = "https://drive.google.com/file/d/16qTfO2iXZE6L-ts-7BzDEiuF_W7dThXB/view?usp=sharing";
