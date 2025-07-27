@@ -33,14 +33,14 @@ export default function HeroSection() {
                             </div>
                         </FadeInSection>
                     </div>
-                    <div className="hidden md:block relative">
-                         <FadeInSection>
+                    <div className="hidden md:block relative h-full w-full">
+                         <FadeInSection className="h-full">
                             <Image
                                 src="/mainimage.png"
                                 alt="Vigneshwaran"
-                                width={600}
-                                height={600}
-                                className="h-auto w-full object-contain"
+                                layout="fill"
+                                objectFit="contain"
+                                className="h-auto w-full"
                                 priority
                             />
                         </FadeInSection>
