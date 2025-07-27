@@ -82,7 +82,7 @@ export const PROJECTS = [
     {
         id: 3,
         category: "AI-Powered Tool",
-        title: "Resume Genesis AI",
+        title: "CVCraft AI",
         description: "An AI-driven platform that helps job seekers create and optimize their resumes for Applicant Tracking Systems (ATS). The tool provides an ATS score checker and generates an ATS-friendly resume version to improve visibility to recruiters.",
         tags: ["AI", "NLP", "React", "Node.js", "ATS"],
         imageUrl: "https://placehold.co/600x400.png",
