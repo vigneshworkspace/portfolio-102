@@ -110,6 +110,7 @@ export const PROJECTS = [
         imageUrl: "https://placehold.co/600x400.png",
         imageHint: "iot sensor",
         link: "https://github.com/vigneshworkspace/Gas-Leakage-Detection-System",
+        demoUrl: "https://drive.google.com/file/d/1f0yUhSE9oCd6fHXcuvmqv9kWP_6IGKvl/view?usp=sharing",
         gradient: "from-red-400 via-pink-500 to-rose-500",
     },
     {
