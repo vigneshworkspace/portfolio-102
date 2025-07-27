@@ -8,7 +8,7 @@ export default function CertificationsSection() {
     return (
         <section id="certifications" className="py-24 md:py-40 relative">
             <div className="max-w-5xl mx-auto">
-                <p className="section-title mb-12 text-center">05 // Certifications</p>
+                <p className="section-title mb-12 justify-center">05 // Certifications</p>
                 <div className="grid md:grid-cols-2 gap-6">
                     {CERTIFICATIONS.map((cert) => (
                         <a 
@@ -27,7 +27,7 @@ export default function CertificationsSection() {
                                         <h4 className="font-headline text-lg sm:text-xl uppercase tracking-wider text-foreground group-hover:text-primary transition-colors duration-300">{cert.title}</h4>
                                         <p className="font-headline text-sm sm:text-base text-muted-foreground">{cert.issuer}</p>
                                     </div>
-                                    <div className="flex items-center gap-2 text-muted-foreground group-hover:text-primary transition-colors duration-300 sm:ml-auto">
+                                    <div className="items-center gap-2 text-muted-foreground group-hover:text-primary transition-colors duration-300 sm:ml-auto hidden sm:flex">
                                        <span className="text-sm font-mono hidden sm:inline">View</span>
                                        <ArrowRight className="h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1" />
                                     </div>

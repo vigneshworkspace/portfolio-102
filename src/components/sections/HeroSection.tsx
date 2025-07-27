@@ -15,10 +15,10 @@ export default function HeroSection() {
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-headline tracking-widest uppercase">
                             Vigneshwaran
                         </h1>
-                        <p className="mt-6 max-w-2xl text-lg md:text-xl text-muted-foreground font-headline tracking-wider mx-auto md:mx-0">
+                        <p className="mt-6 max-w-2xl mx-auto md:mx-0 text-lg md:text-xl text-muted-foreground font-headline tracking-wider">
                             Full Stack & AI Developer crafting intelligent, end-to-end solutions.
                         </p>
-                        <div className="mt-12 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                        <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                             <Button asChild size="lg" className="font-headline uppercase text-base tracking-widest px-10 py-7">
                                 <Link href="#projects">View Projects</Link>
                             </Button>
@@ -27,7 +27,7 @@ export default function HeroSection() {
                             </Button>
                         </div>
                     </FadeInSection>
-                    <FadeInSection className="flex justify-center">
+                    <FadeInSection className="row-start-1 md:row-auto flex justify-center">
                          <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px]">
                              <Image
                                 src="/mainimage.png"

@@ -38,7 +38,7 @@ export default function ExperienceSection() {
     return (
         <section id="experience" className="py-24 md:py-40">
             <div className="max-w-4xl mx-auto">
-                <p className="section-title mb-16 text-center">01 // Experience</p>
+                <p className="section-title mb-16 justify-center">01 // Experience</p>
                 <div className="relative">
                     {/* Vertical line - hidden on mobile, shown on md and up */}
                     <div className="absolute left-4 top-0 h-full w-0.5 -translate-x-1/2 bg-border md:left-1/2"></div>
@@ -53,8 +53,8 @@ export default function ExperienceSection() {
                                     className={`fade-in-up flex items-center group md:flex-row ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}
                                 >
                                     {/* Card Content */}
-                                    <div className="w-full md:w-1/2 relative md:text-left pl-10 md:pl-0">
-                                        <div className={`md:${isLeft ? 'md:pr-8 md:text-right' : 'md:pl-8 md:text-left'}`}>
+                                    <div className="w-full md:w-1/2 relative pl-10 md:pl-0">
+                                        <div className={`text-center md:text-left md:${isLeft ? 'md:pr-8 md:text-right' : 'md:pl-8 md:text-left'}`}>
                                             <div className="absolute inset-0 bg-primary/10 rounded-lg blur-xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
                                             <div className="relative p-6 bg-card/50 backdrop-blur-sm border border-dashed border-border/50 rounded-lg transition-all duration-300 group-hover:border-primary group-hover:shadow-2xl group-hover:-translate-y-1">
                                                 <p className="font-headline text-base text-muted-foreground">{exp.date}</p>

@@ -1,3 +1,4 @@
+
 import { TECHNOLOGIES } from '@/lib/tech';
 import TechIcon from '../icons/TechIcons';
 
@@ -8,7 +9,7 @@ export default function TechnologiesSection() {
     <section id="technologies" className="py-24 md:py-40">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="section-title mb-4">02 // My Toolbox</p>
+          <p className="section-title mb-4 justify-center">02 // My Toolbox</p>
           <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-wider">
             Technologies I Work With
           </h2>
