@@ -1,3 +1,4 @@
+
 import { CERTIFICATIONS } from '@/lib/data';
 import { Card } from '@/components/ui/card';
 import CertificationIcon from '@/components/icons/CertificationIcon';
@@ -19,13 +20,13 @@ export default function CertificationsSection() {
                         >
                             <Card className="h-full bg-card/50 backdrop-blur-sm border-dashed border border-border/50 transition-all duration-300 group-hover:bg-muted/50">
                                 <div className="p-6 flex items-center justify-between">
-                                    <div className="flex items-center gap-6">
+                                    <div className="flex items-center gap-4 sm:gap-6">
                                         <div className="flex-shrink-0">
                                             <CertificationIcon title={cert.title} />
                                         </div>
                                         <div>
-                                            <h4 className="font-headline text-xl uppercase tracking-wider text-foreground group-hover:text-primary transition-colors duration-300">{cert.title}</h4>
-                                            <p className="font-headline text-base text-muted-foreground">{cert.issuer}</p>
+                                            <h4 className="font-headline text-lg sm:text-xl uppercase tracking-wider text-foreground group-hover:text-primary transition-colors duration-300">{cert.title}</h4>
+                                            <p className="font-headline text-sm sm:text-base text-muted-foreground">{cert.issuer}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-2 text-muted-foreground group-hover:text-primary transition-colors duration-300">

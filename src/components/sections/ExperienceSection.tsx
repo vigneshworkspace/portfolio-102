@@ -1,3 +1,4 @@
+
 "use client";
 import { EXPERIENCE } from '@/lib/data';
 import { useEffect, useRef } from 'react';
@@ -39,8 +40,8 @@ export default function ExperienceSection() {
             <div className="max-w-4xl mx-auto">
                 <p className="section-title mb-16 text-center">01 // Experience</p>
                 <div className="relative">
-                    {/* Vertical line */}
-                    <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-border border-dashed"></div>
+                    {/* Vertical line - hidden on mobile, shown on md and up */}
+                    <div className="absolute left-4 top-0 h-full w-0.5 -translate-x-1/2 bg-border border-dashed md:left-1/2"></div>
 
                     <div className="space-y-16">
                         {EXPERIENCE.map((exp, index) => {
@@ -49,30 +50,34 @@ export default function ExperienceSection() {
                                 <div
                                     key={index}
                                     ref={(el) => (itemsRef.current[index] = el)}
-                                    className={`fade-in-up flex items-center group ${isLeft ? 'flex-row' : 'flex-row-reverse'}`}
+                                    className={`fade-in-up flex items-center group md:flex-row ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}
                                 >
                                     {/* Card Content */}
-                                    <div className={`w-1/2 relative ${isLeft ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                                        <div className="absolute inset-0 bg-primary/10 rounded-lg blur-xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
-                                        <div className="relative p-6 bg-card/50 backdrop-blur-sm border border-dashed border-border/50 rounded-lg transition-all duration-300 group-hover:border-primary group-hover:shadow-2xl group-hover:-translate-y-1">
-                                            <p className="font-headline text-lg text-muted-foreground">{exp.date}</p>
-                                            <h3 className="font-bold font-headline text-2xl mt-1 uppercase tracking-wider">
-                                                {companiesToHighlight.includes(exp.company) ? (
-                                                    <span className="text-primary">{exp.company}</span>
-                                                ) : (
-                                                    exp.company
-                                                )}
-                                            </h3>
-                                            <h4 className="font-headline text-xl uppercase tracking-wider text-muted-foreground/80">{exp.title}</h4>
-                                            <p className="text-muted-foreground mt-3 text-sm leading-relaxed font-mono">{exp.description}</p>
+                                    <div className="w-full md:w-1/2 relative md:text-left pl-12 md:pl-0">
+                                        <div className={`md:${isLeft ? 'md:pr-8 md:text-right' : 'md:pl-8 md:text-left'}`}>
+                                            <div className="absolute inset-0 bg-primary/10 rounded-lg blur-xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+                                            <div className="relative p-6 bg-card/50 backdrop-blur-sm border border-dashed border-border/50 rounded-lg transition-all duration-300 group-hover:border-primary group-hover:shadow-2xl group-hover:-translate-y-1">
+                                                <p className="font-headline text-lg text-muted-foreground">{exp.date}</p>
+                                                <h3 className="font-bold font-headline text-2xl mt-1 uppercase tracking-wider">
+                                                    {companiesToHighlight.includes(exp.company) ? (
+                                                        <span className="text-primary">{exp.company}</span>
+                                                    ) : (
+                                                        exp.company
+                                                    )}
+                                                </h3>
+                                                <h4 className="font-headline text-xl uppercase tracking-wider text-muted-foreground/80">{exp.title}</h4>
+                                                <p className="text-muted-foreground mt-3 text-sm leading-relaxed font-mono">{exp.description}</p>
+                                            </div>
                                         </div>
                                     </div>
+                                    
                                     {/* Timeline Dot */}
-                                    <div className="relative z-10">
+                                    <div className="absolute left-4 -translate-x-1/2 z-10 md:relative md:left-0 md:translate-x-0">
                                         <div className="h-4 w-4 bg-primary rounded-full border-4 border-background ring-4 ring-primary/20 shadow-lg transition-transform duration-300 group-hover:scale-125"></div>
                                     </div>
-                                    {/* Spacer */}
-                                    <div className="w-1/2"></div>
+
+                                    {/* Spacer for desktop */}
+                                    <div className="w-1/2 hidden md:block"></div>
                                 </div>
                             );
                         })}

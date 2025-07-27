@@ -1,10 +1,11 @@
+
 import { SKILLS } from '@/lib/data';
 
 export default function AboutSection() {
     return (
         <section id="about" className="py-24 md:py-40">
-            <div className="max-w-4xl mx-auto">
-                <p className="section-title mb-8 text-center">01 // About</p>
+            <div className="max-w-4xl mx-auto text-center md:text-left">
+                <p className="section-title mb-8 justify-center md:justify-start">01 // About</p>
                 <div className="grid md:grid-cols-3 gap-10 items-baseline">
                     <div className="md:col-span-1">
                         <h3 className="font-bold font-headline text-2xl uppercase tracking-wider mb-4">My Philosophy</h3>

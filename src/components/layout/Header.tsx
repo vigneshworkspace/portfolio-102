@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -6,19 +7,23 @@ import { cn } from '@/lib/utils';
 import { RESUME_URL } from '@/lib/data';
 import { Button } from '../ui/button';
 import { ThemeToggleButton } from '../ThemeToggleButton';
+import MobileNav from './MobileNav';
 
 const NavLink = ({ 
     href, 
     children, 
-    isActive 
+    isActive,
+    onClick,
 }: { 
     href: string; 
     children: React.ReactNode; 
     isActive: boolean;
+    onClick?: () => void;
 }) => {
     return (
         <a 
             href={href} 
+            onClick={onClick}
             className={cn(
                 "font-medium text-sm tracking-wide relative transition-colors duration-300",
                 isActive ? "text-primary" : "text-foreground/70 hover:text-primary",
@@ -95,8 +100,12 @@ export default function Header() {
                             <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">Resume</a>
                         </Button>
                     </div>
+                    <div className="md:hidden">
+                        <MobileNav navItems={navItems} activeSection={activeSection} />
+                    </div>
                 </nav>
             </div>
         </header>
     );
 }
+
