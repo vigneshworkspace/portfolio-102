@@ -9,8 +9,8 @@ export default function HeroSection() {
     return (
         <section id="home" className="min-h-screen flex items-center relative">
             <div className="container mx-auto px-6">
-                <div className="grid md:grid-cols-2 gap-16 items-center">
-                    <div className="relative z-10">
+                <div className="grid md:grid-cols-5 gap-8 items-center">
+                    <div className="md:col-span-3 relative z-10">
                         <FadeInSection>
                             <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline tracking-widest uppercase">
                                 Vigneshwaran
@@ -32,8 +32,8 @@ export default function HeroSection() {
                             </div>
                         </FadeInSection>
                     </div>
-                    <div className="hidden md:flex justify-center items-center">
-                         <FadeInSection className="relative h-[70vh] w-full">
+                    <div className="hidden md:flex md:col-span-2 justify-center items-center">
+                         <FadeInSection className="relative h-[80vh] w-full">
                             <Image
                                 src="/mainimage.png"
                                 alt="Vigneshwaran"
