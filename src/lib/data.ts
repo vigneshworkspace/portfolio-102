@@ -70,7 +70,7 @@ export const PROJECTS = [
     {
         id: 2,
         category: "Computer Vision",
-        title: "X-Ray Xpert AI",
+        title: "ScoutDX",
         description: "An AI-powered diagnostic tool that analyzes X-ray images to identify potential diseases. Users can interact with a chatbot to upload an X-ray and receive a preliminary analysis based on a suite of specialized Convolutional Neural Network (CNN) models.",
         tags: ["Python", "CNN", "TensorFlow", "Chatbot", "Medical Imaging"],
         imageUrl: "https://placehold.co/600x400.png",

@@ -5,7 +5,7 @@ import { FileText, Stethoscope, Bot, Shield, Cpu, ExternalLink, Eye } from "luci
 
 const iconMap: { [key: string]: React.ElementType } = {
     "DocMind AI": FileText,
-    "X-Ray Xpert AI": Stethoscope,
+    "ScoutDX": Stethoscope,
     "Resume Genesis AI": FileText,
     "Offline RAG Chatbot": Bot,
     "Gas Leakage Detection System": Shield,
