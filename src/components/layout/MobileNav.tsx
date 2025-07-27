@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from 'react';
-import { Menu, X, Bot } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
@@ -82,4 +82,3 @@ export default function MobileNav({ navItems, activeSection }: { navItems: { hre
         </>
     );
 }
-
