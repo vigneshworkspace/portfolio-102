@@ -32,8 +32,8 @@ export default function HeroSection() {
                             </div>
                         </FadeInSection>
                     </div>
-                    <div className="hidden md:block relative hero-image-container">
-                         <FadeInSection>
+                    <div className="hidden md:block">
+                         <FadeInSection className="relative h-[70vh]">
                             <Image
                                 src="/mainimage.png"
                                 alt="Vigneshwaran"
