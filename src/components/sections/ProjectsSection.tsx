@@ -65,10 +65,10 @@ export default function ProjectsSection() {
                                                     </div>
                                                 ))}
                                                 {projectData.demoUrl && (
-                                                     <Button asChild variant="outline" size="sm" className="font-mono text-xs rounded-full">
+                                                     <Button asChild variant="outline" size="sm" className="font-mono text-xs rounded-full px-4">
                                                         <a href={projectData.demoUrl} target="_blank" rel="noopener noreferrer">
                                                             <Eye className="mr-2 h-3 w-3" />
-                                                            Live Demo
+                                                            Demo Video
                                                         </a>
                                                     </Button>
                                                 )}
