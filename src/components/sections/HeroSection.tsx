@@ -9,15 +9,15 @@ export default function HeroSection() {
     return (
         <section id="home" className="min-h-screen flex items-center relative">
             <div className="container mx-auto px-6">
-                <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="grid md:grid-cols-2 gap-16 items-center">
                     <div className="relative z-10">
                         <FadeInSection>
-                            <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline tracking-widest uppercase">
+                            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-headline tracking-widest uppercase">
                                 Vigneshwaran
                             </h1>
                         </FadeInSection>
                         <FadeInSection>
-                            <p className="mt-6 max-w-2xl text-xl text-muted-foreground font-headline tracking-wider">
+                            <p className="mt-6 max-w-2xl text-lg md:text-xl text-muted-foreground font-headline tracking-wider">
                                 Full Stack & AI Developer crafting intelligent, end-to-end solutions.
                             </p>
                         </FadeInSection>
@@ -32,17 +32,17 @@ export default function HeroSection() {
                             </div>
                         </FadeInSection>
                     </div>
-                    <div className="hidden md:flex justify-center items-center">
-                         <FadeInSection className="relative h-[70vh] w-full">
-                            <Image
+                    <FadeInSection className="hidden md:flex justify-center items-center">
+                        <div className="relative h-[70vh] w-full">
+                             <Image
                                 src="/mainimage.png"
                                 alt="Vigneshwaran"
                                 layout="fill"
                                 objectFit="contain"
                                 priority
                             />
-                        </FadeInSection>
-                    </div>
+                        </div>
+                    </FadeInSection>
                 </div>
             </div>
         </section>
