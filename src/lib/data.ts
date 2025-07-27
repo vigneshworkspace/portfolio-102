@@ -64,6 +64,7 @@ export const PROJECTS = [
         imageUrl: "https://i.ibb.co/3k5g7b2/Screenshot-2024-07-11-at-12-07-07-PM.png",
         imageHint: "document analysis",
         link: "https://github.com/vigneshworkspace/DocMind-AI-Tool",
+        demoUrl: "https://drive.google.com/file/d/1ESEpkUzbvDX_a0jqRFPf3dyBMZ3JRRSf/view?usp=sharing",
         gradient: "from-emerald-400 via-cyan-500 to-blue-500",
     },
     {

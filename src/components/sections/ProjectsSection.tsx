@@ -1,6 +1,7 @@
 
 import { PROJECTS } from '@/lib/data';
-import { FileText, Stethoscope, Bot, Shield, Cpu, ExternalLink } from "lucide-react";
+import { Button } from '@/components/ui/button';
+import { FileText, Stethoscope, Bot, Shield, Cpu, ExternalLink, Eye } from "lucide-react";
 
 const iconMap: { [key: string]: React.ElementType } = {
     "DocMind AI": FileText,
@@ -30,42 +31,51 @@ export default function ProjectsSection() {
                     <div className="md:col-span-2 space-y-8">
                         {PROJECTS.map((project) => {
                              const IconComponent = iconMap[project.title] || ExternalLink;
+                             const projectData = project as (typeof PROJECTS)[0] & { demoUrl?: string };
                              return (
-                                <a 
+                                <div 
                                     key={project.id} 
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="block group"
+                                    className="group border border-dashed border-border/50 rounded-lg p-6 bg-card/50 backdrop-blur-sm transition-all duration-300 hover:border-primary hover:-translate-y-1"
                                 >
-                                    <div className="border border-dashed border-border/50 rounded-lg p-6 bg-card/50 backdrop-blur-sm transition-all duration-300 hover:border-primary hover:-translate-y-1">
-                                        <div className="flex flex-col sm:flex-row gap-6">
-                                            <div className="flex-shrink-0 mx-auto sm:mx-0">
-                                                <div className="w-16 h-16 rounded-lg bg-card border border-dashed border-border/50 flex items-center justify-center group-hover:border-primary transition-colors duration-300">
-                                                    <IconComponent className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
-                                                </div>
+                                    <div className="flex flex-col sm:flex-row gap-6">
+                                        <div className="flex-shrink-0 mx-auto sm:mx-0">
+                                            <div className="w-16 h-16 rounded-lg bg-card border border-dashed border-border/50 flex items-center justify-center group-hover:border-primary transition-colors duration-300">
+                                                <IconComponent className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
                                             </div>
-                                            <div className="text-center sm:text-left">
-                                                <div className="flex items-center justify-center sm:justify-start gap-4">
-                                                    <h3 className="font-headline text-2xl font-bold uppercase tracking-wider text-foreground group-hover:text-primary transition-colors duration-300">{project.title}</h3>
-                                                    <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                                </div>
-                                                <p className="font-mono text-muted-foreground/80 mt-1">{project.category}</p>
-                                                <p className="font-mono text-muted-foreground mt-4 leading-relaxed">{project.description}</p>
-                                                <div className="flex flex-wrap gap-2 mt-4 justify-center sm:justify-start">
-                                                    {project.tags.map((tag) => (
-                                                        <div
-                                                            key={tag}
-                                                            className="text-xs font-mono text-primary/80 bg-primary/10 border border-primary/20 rounded-full px-3 py-1"
-                                                        >
-                                                            {tag}
-                                                        </div>
-                                                    ))}
-                                                </div>
+                                        </div>
+                                        <div className="text-center sm:text-left flex-grow">
+                                            <a 
+                                                href={project.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center justify-center sm:justify-start gap-4"
+                                            >
+                                                <h3 className="font-headline text-2xl font-bold uppercase tracking-wider text-foreground group-hover:text-primary transition-colors duration-300">{project.title}</h3>
+                                                <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                            </a>
+                                            <p className="font-mono text-muted-foreground/80 mt-1">{project.category}</p>
+                                            <p className="font-mono text-muted-foreground mt-4 leading-relaxed">{project.description}</p>
+                                            <div className="flex flex-wrap items-center gap-2 mt-4 justify-center sm:justify-start">
+                                                {project.tags.map((tag) => (
+                                                    <div
+                                                        key={tag}
+                                                        className="text-xs font-mono text-primary/80 bg-primary/10 border border-primary/20 rounded-full px-3 py-1"
+                                                    >
+                                                        {tag}
+                                                    </div>
+                                                ))}
+                                                {projectData.demoUrl && (
+                                                     <Button asChild variant="outline" size="sm" className="font-mono text-xs rounded-full">
+                                                        <a href={projectData.demoUrl} target="_blank" rel="noopener noreferrer">
+                                                            <Eye className="mr-2 h-3 w-3" />
+                                                            Live Demo
+                                                        </a>
+                                                    </Button>
+                                                )}
                                             </div>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                              )
                         })}
                     </div>
