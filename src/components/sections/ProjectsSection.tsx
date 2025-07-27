@@ -31,7 +31,7 @@ export default function ProjectsSection() {
                     <div className="md:col-span-2 space-y-8">
                         {PROJECTS.map((project) => {
                              const IconComponent = iconMap[project.title] || ExternalLink;
-                             const projectData = project as (typeof PROJECTS)[0] & { demoUrl?: string };
+                             const projectData = project as (typeof PROJECTS)[0] & { demoUrl?: string; status?: string };
                              return (
                                 <div 
                                     key={project.id} 
@@ -44,15 +44,22 @@ export default function ProjectsSection() {
                                             </div>
                                         </div>
                                         <div className="text-center sm:text-left flex-grow">
-                                            <a 
-                                                href={project.link}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="inline-flex items-center justify-center sm:justify-start gap-4"
-                                            >
-                                                <h3 className="font-headline text-2xl font-bold uppercase tracking-wider text-foreground group-hover:text-primary transition-colors duration-300">{project.title}</h3>
-                                                <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                            </a>
+                                             <div className="flex items-center justify-center sm:justify-start gap-4">
+                                                <a 
+                                                    href={project.link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="inline-flex items-center gap-4"
+                                                >
+                                                    <h3 className="font-headline text-2xl font-bold uppercase tracking-wider text-foreground group-hover:text-primary transition-colors duration-300">{project.title}</h3>
+                                                    <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                                </a>
+                                                 {projectData.status && (
+                                                    <div className="text-xs font-mono text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 rounded-full px-3 py-1">
+                                                        {projectData.status}
+                                                    </div>
+                                                )}
+                                            </div>
                                             <p className="font-mono text-muted-foreground/80 mt-1">{project.category}</p>
                                             <p className="font-mono text-muted-foreground mt-4 leading-relaxed">{project.description}</p>
                                             <div className="flex flex-wrap items-center gap-2 mt-4 justify-center sm:justify-start">
