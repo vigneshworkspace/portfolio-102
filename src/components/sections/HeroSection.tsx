@@ -8,11 +8,11 @@ import FadeInSection from '../animations/FadeInSection';
 
 export default function HeroSection() {
     return (
-        <section id="home" className="min-h-screen flex items-center relative py-16 md:py-0">
+        <section id="home" className="min-h-screen flex items-center relative py-24 md:py-0">
             <div className="container mx-auto px-6">
-                <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-                    <FadeInSection className="text-center md:text-left row-start-2 md:row-start-1">
-                        <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-headline tracking-widest uppercase">
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                    <FadeInSection className="text-center md:text-left">
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-headline tracking-widest uppercase">
                             Vigneshwaran
                         </h1>
                         <p className="mt-6 max-w-2xl text-lg md:text-xl text-muted-foreground font-headline tracking-wider mx-auto md:mx-0">
@@ -27,7 +27,7 @@ export default function HeroSection() {
                             </Button>
                         </div>
                     </FadeInSection>
-                    <FadeInSection className="row-start-1 md:row-start-1 flex justify-center">
+                    <FadeInSection className="flex justify-center">
                          <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px]">
                              <Image
                                 src="/mainimage.png"

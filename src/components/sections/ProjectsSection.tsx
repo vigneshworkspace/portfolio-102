@@ -44,14 +44,14 @@ export default function ProjectsSection() {
                                             </div>
                                         </div>
                                         <div className="text-center sm:text-left flex-grow">
-                                             <div className="flex items-center justify-center sm:justify-start gap-4">
+                                             <div className="flex items-center justify-center sm:justify-start gap-4 flex-wrap">
                                                 <a 
                                                     href={project.link}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="inline-flex items-center gap-4"
+                                                    className="inline-flex items-center gap-2"
                                                 >
-                                                    <h3 className="font-headline text-2xl font-bold uppercase tracking-wider text-foreground group-hover:text-primary transition-colors duration-300">{project.title}</h3>
+                                                    <h3 className="font-headline text-xl md:text-2xl font-bold uppercase tracking-wider text-foreground group-hover:text-primary transition-colors duration-300">{project.title}</h3>
                                                     <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                                 </a>
                                                  {projectData.status && (
@@ -61,7 +61,7 @@ export default function ProjectsSection() {
                                                 )}
                                             </div>
                                             <p className="font-mono text-muted-foreground/80 mt-1">{project.category}</p>
-                                            <p className="font-mono text-muted-foreground mt-4 leading-relaxed">{project.description}</p>
+                                            <p className="font-mono text-muted-foreground mt-4 leading-relaxed text-sm">{project.description}</p>
                                             <div className="flex flex-wrap items-center gap-2 mt-4 justify-center sm:justify-start">
                                                 {project.tags.map((tag) => (
                                                     <div
@@ -72,7 +72,7 @@ export default function ProjectsSection() {
                                                     </div>
                                                 ))}
                                                 {projectData.demoUrl && (
-                                                     <Button asChild variant="outline" size="sm" className="font-mono text-xs rounded-full px-4">
+                                                     <Button asChild variant="outline" size="sm" className="font-mono text-xs rounded-full px-4 py-2">
                                                         <a href={projectData.demoUrl} target="_blank" rel="noopener noreferrer">
                                                             <Eye className="mr-2 h-3 w-3" />
                                                             Demo Video

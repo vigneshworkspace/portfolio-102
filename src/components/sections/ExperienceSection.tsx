@@ -41,9 +41,9 @@ export default function ExperienceSection() {
                 <p className="section-title mb-16 text-center">01 // Experience</p>
                 <div className="relative">
                     {/* Vertical line - hidden on mobile, shown on md and up */}
-                    <div className="absolute left-4 top-0 h-full w-0.5 -translate-x-1/2 bg-border border-dashed md:left-1/2"></div>
+                    <div className="absolute left-4 top-0 h-full w-0.5 -translate-x-1/2 bg-border md:left-1/2"></div>
 
-                    <div className="space-y-16">
+                    <div className="space-y-12 md:space-y-16">
                         {EXPERIENCE.map((exp, index) => {
                             const isLeft = index % 2 === 0;
                             return (
@@ -53,19 +53,19 @@ export default function ExperienceSection() {
                                     className={`fade-in-up flex items-center group md:flex-row ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}
                                 >
                                     {/* Card Content */}
-                                    <div className="w-full md:w-1/2 relative md:text-left pl-12 md:pl-0">
+                                    <div className="w-full md:w-1/2 relative md:text-left pl-10 md:pl-0">
                                         <div className={`md:${isLeft ? 'md:pr-8 md:text-right' : 'md:pl-8 md:text-left'}`}>
                                             <div className="absolute inset-0 bg-primary/10 rounded-lg blur-xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
                                             <div className="relative p-6 bg-card/50 backdrop-blur-sm border border-dashed border-border/50 rounded-lg transition-all duration-300 group-hover:border-primary group-hover:shadow-2xl group-hover:-translate-y-1">
-                                                <p className="font-headline text-lg text-muted-foreground">{exp.date}</p>
-                                                <h3 className="font-bold font-headline text-2xl mt-1 uppercase tracking-wider">
+                                                <p className="font-headline text-base text-muted-foreground">{exp.date}</p>
+                                                <h3 className="font-bold font-headline text-xl md:text-2xl mt-1 uppercase tracking-wider">
                                                     {companiesToHighlight.includes(exp.company) ? (
                                                         <span className="text-primary">{exp.company}</span>
                                                     ) : (
                                                         exp.company
                                                     )}
                                                 </h3>
-                                                <h4 className="font-headline text-xl uppercase tracking-wider text-muted-foreground/80">{exp.title}</h4>
+                                                <h4 className="font-headline text-lg md:text-xl uppercase tracking-wider text-muted-foreground/80">{exp.title}</h4>
                                                 <p className="text-muted-foreground mt-3 text-sm leading-relaxed font-mono">{exp.description}</p>
                                             </div>
                                         </div>

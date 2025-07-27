@@ -19,17 +19,15 @@ export default function CertificationsSection() {
                             className="group relative block"
                         >
                             <Card className="h-full bg-card/50 backdrop-blur-sm border-dashed border border-border/50 transition-all duration-300 group-hover:bg-muted/50">
-                                <div className="p-6 flex items-center justify-between">
-                                    <div className="flex items-center gap-4 sm:gap-6">
-                                        <div className="flex-shrink-0">
-                                            <CertificationIcon title={cert.title} />
-                                        </div>
-                                        <div>
-                                            <h4 className="font-headline text-lg sm:text-xl uppercase tracking-wider text-foreground group-hover:text-primary transition-colors duration-300">{cert.title}</h4>
-                                            <p className="font-headline text-sm sm:text-base text-muted-foreground">{cert.issuer}</p>
-                                        </div>
+                                <div className="p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-left">
+                                    <div className="flex-shrink-0">
+                                        <CertificationIcon title={cert.title} />
                                     </div>
-                                    <div className="flex items-center gap-2 text-muted-foreground group-hover:text-primary transition-colors duration-300">
+                                    <div className="flex-grow">
+                                        <h4 className="font-headline text-lg sm:text-xl uppercase tracking-wider text-foreground group-hover:text-primary transition-colors duration-300">{cert.title}</h4>
+                                        <p className="font-headline text-sm sm:text-base text-muted-foreground">{cert.issuer}</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 text-muted-foreground group-hover:text-primary transition-colors duration-300 sm:ml-auto">
                                        <span className="text-sm font-mono hidden sm:inline">View</span>
                                        <ArrowRight className="h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1" />
                                     </div>
