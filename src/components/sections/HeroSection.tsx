@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Button } from '@/components/ui/button';
@@ -33,8 +32,8 @@ export default function HeroSection() {
                             </div>
                         </FadeInSection>
                     </div>
-                    <div className="hidden md:block">
-                         <FadeInSection className="relative h-[70vh]">
+                    <div className="hidden md:flex justify-center items-center">
+                         <FadeInSection className="relative h-[70vh] w-full">
                             <Image
                                 src="/mainimage.png"
                                 alt="Vigneshwaran"
